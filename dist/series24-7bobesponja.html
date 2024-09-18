@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans&family=PT+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="/dist/gallery-menu.css">
+    <script src="./app.js" defer></script>
+    <script defer src="series247.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js">
+    </script>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (
+        localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    <!--boton megusta y compartir fb-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0" nonce="RCOVilpN"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Series 24/7 ☻</title>
+  </head>
+  <body
+    class="bg-sky-50 text-stone-900 dark:bg-primary dark:text-cyan-50 font-roboto"
+  >
+    <header>
+      <!--  INICIO MENU  -->
+      <nav
+        class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center"
+      >
+        <a href=""><img src="./img/android-icon-playa-36x36.png" alt="" width="28" class="wow bounceInUp" /></a>
+        <div
+          id="menu"
+          class="bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px] md:flex flex-col items-start justify-around rounded-lg text-dark dark:text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-primary hidden"
+        >
+          <ul
+            class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full"
+          >
+            <li class="md:px-5 hover:text-sky-600"><a href="index.html">Estrenos</a></li>
+            <li class="md:px-5 hover:text-sky-600">
+              <a href="">Series 24/7</a>
+            </li>
+            <li class="md:px-5 hover:text-sky-600"><a href="https://pelisplaya.net/iptv" target="_blank">Listas Iptv</a></li>
+            <li class="md:px-5 hover:text-sky-600">
+              <a href="#contacto">Contáctame</a>
+            </li>
+          </ul>
+          <!-- BOTON MODO OSCURO -->
+          <button id="darkButton">
+            <i class="bi bi-moon-stars-fill text-sky-600 text-2xl"></i>
+          </button>
+          <!-- BOTON MENU HAMBURGUESA -->
+        </div>
+        <button id="menu-button" class="absolute top-10 right-12 md:hidden">
+          <span
+            class="br-1 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+          ></span>
+          <span
+            class="br-2 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+          ></span>
+          <span
+            class="br-3 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+          ></span>
+        </button>
+      </nav>
+      <!-- FIN DEL MENU  -->
+    </header>
+    <main>
+      <!-- #1 SECCION HERO  -->
+      <section class="my-0 flex flex-col lg:flex-row lg:min-h-full lg:min-w-full md:grid-flow-row">
+        <div class="p-10 lg:w-[80%] lg:min-h-full lg:self-center">
+          <h1
+            class="text-sky-600 dark:text-sky-300 text-4xl font-bold tracking-widest leading-10"
+          >
+            Disfruta de las mejores peliculas y series online 
+          </h1>
+          <p class="py-2 text-3xl font-bold text-slate-600 dark:text-slate-300">
+            Estrenos de peliculas y series en HD 2024
+          </p>
+          <p class="text-3xl font-bold text-slate-500 dark:text-slate-600">
+            Canales iptv y mucho mas..
+          </p>
+          
+          
+              <div  style="display: flex; justify-content: center; align-items: center">
+                <div class="">
+           
+                  <!--reproductor-->
+            <div id="player" style="display: flex; width: 100vw; justify-content: center;">
+              <video id="videoPlayer" controls class="w-100  mw-100">
+                  Tu navegador no soporta el elemento de video.
+              </video></div>
+  
+              <script>// Supongamos que tienes una lista de URLs de archivos .m3u
+                  var playlist = ['http://archive.org/download/mio22_yopmail_07b/01a.mp4',
+  
+                  'http://archive.org/download/mio22_yopmail_07b/01a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/01b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/02a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/02b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/03a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/03b.mp4',
+  
+  'https://archive.org/download/mio22_yopmail_07b/04a.mp4',
+  
+  'https://archive.org/download/mio22_yopmail_07b/04b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/05a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/05b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/06a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/06b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/07a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/08a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/08b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/09a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/09b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/10a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/10b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/11a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/11b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/12a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/12b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/13a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/13b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/14a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/14b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/15b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/16a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/16b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/17a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/17b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/18a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/18b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/19a.mp4',
+   
+  'httpsttp://archive.org/download/mio22_yopmail_07b/19b.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/20a.mp4',
+  
+  'http://archive.org/download/mio22_yopmail_07b/20b.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/61a.Temele%20a%20una%20cangreburger.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/61b.El%20caparaz%C3%B3n%20de%20un%20hombre.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/62a.El%20colchon%20perdido.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/62b.Cangrejo%20vs%20Plankton.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/63.%C2%BFHan%20visto%20a%20este%20caracol.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/64a.Gr%C3%BAa%20de%20habilidad.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/64b.Buenos%20vecinos.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/65a.Vendiendolo%20todo.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/65a.Vendiendolo%20todo.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/65b.El%20gracioso.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/66.Tontos%20y%20dragones.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/67a.SirenoMan%20y%20Chico%20Percebe%20IV%20-La%20Pelicula-.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/67b.Enemigo%20Politico.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/68a.Patricio%20Inteligente.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/68b.Calamardo%20esponja.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/69a.La%20torre%20Cascaruda.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/69b.Sra.%20Poff%2C%20est%C3%A1%20despedida.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/70a.El%20huesped%20fantasma.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/70b.Los%20monosabios.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/71b.Isla%20Karate.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/72a.Todo%20lo%20que%20brilla.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/72b.La%20fuente%20de%20los%20deseos.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/73a.Una%20nueva%20vida.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/73b.Una%20vez%20mordido.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/74a.Vacaciones.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/74b.Fiebre%20de%20pelucas.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/74b.Fiebre%20de%20pelucas.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/75a.Viaje%20calamantastico.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/75b.Esa%20no%20es%20una%20dama.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/76a.La%20cosa.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/76b.Abra%20cadabra.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/77a.Conducido%20a%20las%20lagrimas.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/77b.Reglas%20de%20tontos.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/78a.Nacido%20para%20ser%20salvaje.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/78b.Los%20mejores%20enemigos.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/79a.El%20ratero%20rosado.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/79b.MimiCalamardo.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/80a.El%20mejor%20d%C3%ADa.mp4',
+  
+  'https://archive.org/download/66.tontosydragones/8ob%203sp0nj4%20T3mp.4/80b.El%20regalo%20de%20goma.mp4'
+  ];
+                  var currentTrack = 0;
+                  
+                  // Obtén una referencia al reproductor de video
+                  var player = document.getElementById('videoPlayer');
+                  
+                  // Función para cargar y reproducir una pista
+                  function playTrack(track) {
+                      player.src = track;
+                      player.play();
+                  }
+                  
+                  // Carga la primera pista para empezar
+                  playTrack(playlist[currentTrack]);
+                  
+                  // Cuando una pista termina, pasa a la siguiente
+                  player.addEventListener('ended', function() {
+                      currentTrack++;
+                      if (currentTrack < playlist.length) {
+                          playTrack(playlist[currentTrack]);
+                      }
+                  });
+                  </script>
+                  <br>
+
+              <span style="display: flex; width: 100vw; justify-content: center;"> 🔁 gira la pantalla <i class="fas fa-mobile-alt"></i> y dale play! <i class="fas fa-play"></i> </span>
+           <br><br>
+           <style>#video_navigation {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-row: 3 ;
+            gap: 10px;
+            padding: 5px;
+          }
+          #video_navigation a {
+            display: block;
+            text-align: center;
+          }
+          #video_navigation img {
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+          
+          .img-thumbnail:hover {
+          transform: scale(1.5);
+          }
+          .img-thumbnail:hover {
+          position: relative;
+          z-index: 1;
+          }
+          .img-thumbnail:hover {
+          max-width: 100vw;
+          }</style>
+    <div><menu-component class="container m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10 md:max-w-sm lg:max-w-min"></menu-componet></div>
+
+    </div>
+</div>
+</div>
+</head>
+<body>
+     
+   
+    </div>
+        </div>
+        
+      </section>
+
+      
+    
+        <!-- #5 FOOTER  -->
+        <footer class="text-start mt-12 mb-5 md:text-center ">
+          <p class="hover:text-sky-500">
+           Lo mejor del cine &#38; Canales IPTV.
+          </p>
+          
+          <!--boton me gusta y seguir fb-->
+        <div class="fb-like w-1" data-colorscheme="dark" data-href="https://www.facebook.com/profile.php?id=100067755996971" data-width="360" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+        </footer>
+     
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+  </body>
+</html>
