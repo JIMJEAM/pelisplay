@@ -14,29 +14,57 @@ class Menu extends HTMLElement {
     super();
     this.innerHTML = `<div style="conten-visivility: auto;">
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/y2771ewq4nxn"  target=”_blank ""><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47427-649819-20240911011247.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/8qod0vucyflc"  target=_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47893-122524-20241010010020.jpg" alt="
+  Superman: La historia de Christopher Reeve (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/kgnx1n6ud14y"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48111-551207-20241128085911.jpg" alt="
+   Moana 2 (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/6i9w2py244bl"  target="_blank "><img src="https://www.ecartelera.com/carteles/18700/18710/001_p.jpg" alt="
+   Jurado Nº 2 (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    </ul>
+
+
+     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"><a href="https://gamovideo.com/08wfa6ub9ng3"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47963-399604-20241120081300.jpg" alt="
+   Wicked (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/ad2b42v568jk"  target="_blank "><img src="https://pics.filmaffinity.com/Gladiator_II-808387712-large.jpg" alt="
+   Gladiator 2 (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/hmw4xaxvck1q"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47213-327845-20240822060321.jpg" alt="
+   No hables con extraños (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    </ul>
+
+    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"><a href="https://gamovideo.com/8sg3l5lmy605"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47607-774281-20241024062218.jpg" alt="
+   Venom el ultimo baile (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/ng2jodyt3gfa"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48015-422893-20241017113401.jpg" alt="
+   Terrifier 3: Payaso Siniestro (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/h0wrlzshkxxd"  target="_blank "><img src="https://www.findelahistoria.com/web/wp-content/uploads/2024/07/Hellboy-The-Crooked-Man-poster.jpg" alt="
+   Hellboy: The Crooked Man (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    </ul>
+
+    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"><a href="https://gamovideo.com/y2771ewq4nxn"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47427-649819-20240911011247.jpg" alt="
    Robot Salvaje (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/pf3hyceeus8s"  target=”_blank ""><img src="https://www.justwatch.com/images/poster/318099780/s718/al-rescate-de-fondo-de-bikini-la-pelicula-de-arenita-mejillas.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/pf3hyceeus8s"  target="_blank "><img src="https://www.justwatch.com/images/poster/318099780/s718/al-rescate-de-fondo-de-bikini-la-pelicula-de-arenita-mejillas.jpg" alt="
    Al rescate de Fondo de Bikini (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/1z9yyz1wl4e1"  target=”_blank ""><img src="https://pics.filmaffinity.com/La_sustancia-259383439-large.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/1z9yyz1wl4e1"  target="_blank "><img src="https://pics.filmaffinity.com/La_sustancia-259383439-large.jpg" alt="
    La Sustancia (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     </ul>
 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/gqtg2wddawqy"  target=”_blank ""><img src="https://cdn.mallmarina.cl/mallconcepcion/uploads/2024/09/Joker-2.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/gqtg2wddawqy"  target="_blank "><img src="https://cdn.mallmarina.cl/mallconcepcion/uploads/2024/09/Joker-2.jpg" alt="
    Joker: Folie à Deux (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/9lnh1lej8qkd"  target=”_blank ""><img src="https://moviecrazyplanet.com/wp-content/uploads/2024/07/Transformers-Uno-Chris-Hemsworth-.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/9lnh1lej8qkd"  target="_blank "><img src="https://moviecrazyplanet.com/wp-content/uploads/2024/07/Transformers-Uno-Chris-Hemsworth-.jpg" alt="
    Transformers Uno (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/nkhr5b5o3ez5"  target=”_blank ""><img src="https://image.tmdb.org/t/p/original/wIDulcEDrbW5tLaAHIUqODaTGG6.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/nkhr5b5o3ez5"  target="_blank "><img src="https://image.tmdb.org/t/p/original/wIDulcEDrbW5tLaAHIUqODaTGG6.jpg" alt="
    Instintos asesinos (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     </ul>
 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/86zg4j4qc25y"  target=”_blank ""><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47098-323896-20240812011446.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/86zg4j4qc25y"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47098-323896-20240812011446.jpg" alt="
    Tipos de Gentileza (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/uv8ulhzazwg5"  target=”_blank ""><img src="https://image.tmdb.org/t/p/w500//865DntZzOdX6rLMd405R0nFkLmL.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/uv8ulhzazwg5"  target="_blank "><img src="https://image.tmdb.org/t/p/w500//865DntZzOdX6rLMd405R0nFkLmL.jpg" alt="
    Borderlands (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/s2d9kxwzm81w"  target=”_blank ""><img src="https://megustaelcine.com/wp-content/uploads/2024/08/POSTER-El-cuervo-2024-717x1024.jpg" alt="
+    <li class="cursor-pointer"><a href="https://gamovideo.com/s2d9kxwzm81w"  target="_blank "><img src="https://megustaelcine.com/wp-content/uploads/2024/08/POSTER-El-cuervo-2024-717x1024.jpg" alt="
    El cuervo (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     </ul>
 
@@ -46,7 +74,7 @@ class Menu extends HTMLElement {
 
  <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
 
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47141-607088-20240904070840.jpg" alt="Beetlejuice Beetlejuice (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600801.us.archive.org/28/items/beetlejuice-beetlejuice-2024/Beetlejuice%20Beetlejuice%20%282024%29.mp4?cnt=0')"> </li> 
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47141-607088-20240904070840.jpg" alt="Beetlejuice Beetlejuice (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fsep24%2FVer%20Beetlejuice%20Beetlejuice%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/sIFz9N45kbGHScotbeK1r1LZXQi.jpg" alt="
@@ -81,7 +109,7 @@ class Menu extends HTMLElement {
 </ul> 
 
  <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://powstream.info/2s2prhr199jb"  target=”_blank ""><img src="https://detodopeliculas.nu/wp-content/uploads/2024/07/deadpool_and_wolverine-poster-nuevo.jpg" alt="
+    <li class="cursor-pointer"><a href="https://powstream.info/2s2prhr199jb"  target="_blank "><img src="https://detodopeliculas.nu/wp-content/uploads/2024/07/deadpool_and_wolverine-poster-nuevo.jpg" alt="
    Deadpool and Wolverine (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
    
 
@@ -608,7 +636,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42401-631342-20230712030354.png" alt="
     Mision: Imposible - Sentencia mortal parte uno (2023) " class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://archive.org/download/mision-imposible-sentencia-mortal-parte-uno_202308/Misión_Imposible_-_Sentencia_mortal_parte_uno.mp4')"></li> 
 
-    <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/A_travaes_del_mar-918065562-large.jpg" alt="A través del mar (2023)" class="img_video_nav img-thumbnail   w-50" onclick="videoUrl('https://archive.org/download/01_20230623_20230623_1813/01.mp4')"></li>
+    <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/A_travaes_del_mar-918065562-large.jpg" alt="A través del mar (2023)" class="img_video_nav img-thumbnail   w-50" onclick="videoUrl('https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fjulio%2FVer%20Misi%C3%B3n-%20Imposible%20-%20Sentencia%20mortal%20parte%20uno%20online%20HD%20-%20Cuevana%202%20Espa%C3%B1ol.mp4')"></li>
    
 
 
