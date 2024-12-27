@@ -20,7 +20,7 @@ class Menu extends HTMLElement {
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
            
             <a href="series24-7retro.html ">
-            <img src="https://m.media-amazon.com/images/I/B1d2i--qjtS._SL500_.png "alt="Retro Series " class="img-thumbnail "></a>
+            <img src="https://i.ytimg.com/vi/rRsSv-_NyyU/maxresdefault.jpg "alt="Retro Series " class="img-thumbnail "></a>
            
             <a href="series24-7anime.html ">
             <img src="https://www.apkvisit.com/wp-content/uploads/2022/10/anime-tv-anime-watching-app.png " alt="Anime Series " class="img-thumbnail "></a>
