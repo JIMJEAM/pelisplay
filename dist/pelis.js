@@ -14,6 +14,26 @@ class Menu extends HTMLElement {
     super();
     this.innerHTML = `<div style="conten-visivility: auto;">
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"><a href="https://gamovideo.com/m5ie83aukjiy"  target=_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47807-327301-20241010043952.jpg" alt="
+  Código: Traje Rojo (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/dxwph55xsrqu"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48461-436544-20241217084917.jpg" alt="
+ Maxxxine (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/maxrepk1tj0i"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47299-843109-20240830022501.jpg" alt="
+  El conde de Montecristo (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    </ul>
+
+
+    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"><a href="https://gamovideo.com/5fbp3h2m1c1m"  target=_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46698-644406-20240621115458.jpg" alt="
+ MaXXXine (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/w4ykafy5wa2q"  target="_blank "><img src="https://megustaelcine.com/wp-content/uploads/2024/10/POSTER-El-aprendiz.jpg" alt="
+ The Apprentice. La historia de Trump (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://gamovideo.com/pez1u2tphamg"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48347-701766-20241210092337.jpg" alt="
+  Kraven el cazador (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    </ul>
+
+
+    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
     <li class="cursor-pointer"><a href="https://gamovideo.com/8qod0vucyflc"  target=_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47893-122524-20241010010020.jpg" alt="
   Superman: La historia de Christopher Reeve (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     <li class="cursor-pointer"><a href="https://gamovideo.com/kgnx1n6ud14y"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48111-551207-20241128085911.jpg" alt="
