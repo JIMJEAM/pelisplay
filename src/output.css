@@ -611,10 +611,6 @@ video {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .inline {
   display: inline;
 }
@@ -691,44 +687,12 @@ video {
   resize: both;
 }
 
-.grid-flow-row-dense {
-  grid-auto-flow: row dense;
-}
-
-.grid-flow-col-dense {
-  grid-auto-flow: column dense;
-}
-
 .grid-cols-\[repeat\(auto-fit\2c _minmax\(300px\2c _1fr\)\)\] {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
 .grid-cols-\[repeat\(auto-fit\2c minmax\(300px\2c 1fr\)\)\] {
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-}
-
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-\[max-content\2c _max-content\] {
-  grid-template-columns: max-content max-content;
-}
-
-.grid-cols-\[max-content\2c _max-content\2c max-content\2c _max-content\] {
-  grid-template-columns: max-content max-content max-content max-content;
-}
-
-.grid-cols-\[300px\2c _1fr\] {
-  grid-template-columns: 300px 1fr;
 }
 
 .flex-col {
@@ -757,14 +721,6 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .rounded-lg {

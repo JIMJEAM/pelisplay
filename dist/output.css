@@ -607,10 +607,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -691,36 +687,12 @@ video {
   resize: both;
 }
 
-.grid-flow-row-dense {
-  grid-auto-flow: row dense;
-}
-
 .grid-cols-\[repeat\(auto-fit\2c _minmax\(300px\2c _1fr\)\)\] {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-cols-\[repeat\(auto-fit\2c minmax\(300px\2c 1fr\)\)\] {
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-fit\2c minmax\(150px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-fit\2c minmax\(600px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-fill\2c minmax\(300px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-center\2c minmax\(300px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-center,minmax(300px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-fill\2c _minmax\(300px\2c _1fr\)\)\] {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .flex-col {
@@ -749,10 +721,6 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .rounded-lg {

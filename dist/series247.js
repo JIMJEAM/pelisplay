@@ -22,8 +22,8 @@ class Menu extends HTMLElement {
             <a href="series24-7retro.html ">
             <img src="https://i.ytimg.com/vi/rRsSv-_NyyU/maxresdefault.jpg "alt="Retro Series " class="img-thumbnail "></a>
            
-            <a href="series24-7anime.html ">
-            <img src="https://www.apkvisit.com/wp-content/uploads/2022/10/anime-tv-anime-watching-app.png " alt="Anime Series " class="img-thumbnail "></a>
+            <a href="series24-7retro.html ">
+            <img src="https://m.media-amazon.com/images/I/B1d2i--qjtS._SL500_.png " alt="Anime Series " class="img-thumbnail "></a>
 
             <a href="series24-7series2.html ">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSt__saWKZI-WHtXjPchZ8joqqqscW-Lnk3wgzZv8DVs9vR2bUhqsvskXJg40ooBXtBw&usqp=CAU" alt="Series 2 " class="img-thumbnail "></a>
@@ -96,7 +96,7 @@ class Menu extends HTMLElement {
             alt="Neo Xtv " class="img-thumbnail "></a>
 
             <a href="series24-7latinatv.html ">
-            <img src="https://yt3.googleusercontent.com/Brh94gn82_uzy3hwYDmiJAmHskgWOYSp3Xi4EOsxm66-R9gpiy8TQW8s3n48z49k3cWJH-KYMw=s900-c-k-c0x00ffffff-no-rj " 
+            <img src="https://www.latina.pe/_templates/globals/img/placeholder.png " 
             alt="Latinatv " class="img-thumbnail "></a>
 
             <a href="series24-7conectatv.html ">
