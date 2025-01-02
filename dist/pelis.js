@@ -129,10 +129,7 @@ class Menu extends HTMLElement {
 </ul> 
 
  <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://powstream.info/2s2prhr199jb"  target="_blank "><img src="https://detodopeliculas.nu/wp-content/uploads/2024/07/deadpool_and_wolverine-poster-nuevo.jpg" alt="
-   Deadpool and Wolverine (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-   
-
+    <li class="cursor-pointer"> <img  src="https://detodopeliculas.nu/wp-content/uploads/2024/07/deadpool_and_wolverine-poster-nuevo.jpg" alt="Deadpool and Wolverine (2024)" class="img_video_nav img-thumbnail   w-50" onclick="videoUrl('https://hetbuild860092.takeplcdn.art/d/e2zgx6cno7hvw4m6d2wi76cnzewss57qead2vtkt3sd5c25qnfyxmavpizwofdysvyiwqynz/RGVhZHBvb2wgJiBXb2x2ZXJpbmUgKDIwMjQp.LAT.mp4')"></li>
        
     <li class="cursor-pointer"> <img  src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2024/5/w1280/oyQXRZD0CHC4sf3lMph3X3cJzSw.jpg" alt="
     La Joven y El Mar (2024) " class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fjul24%2FVer%20La%20Joven%20y%20El%20Mar%20online%20HD%20-%20Cuevana%202.mp4')">
