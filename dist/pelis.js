@@ -14,60 +14,65 @@ class Menu extends HTMLElement {
     super();
     this.innerHTML = `<div style="conten-visivility: auto;">
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/m5ie83aukjiy"  target=_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47807-327301-20241010043952.jpg" alt="
-  Código: Traje Rojo (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/dxwph55xsrqu"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48461-436544-20241217084917.jpg" alt="
- Maxxxine (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/maxrepk1tj0i"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47299-843109-20240830022501.jpg" alt="
-  El conde de Montecristo (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"> <img src="https://assets.biggerpicture.ai/assets/HO-1600/eventmaster/1136_4.png" alt="El mono (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia903207.us.archive.org/9/items/Kmonito/Kmonito.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinemarkhoyts.com.ar/Images/Posters/93fd0bfdd3b1999695cef992824fafaa.jpg" alt="La compañera perfecta (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601502.us.archive.org/8/items/perfect-co/PerfectCo.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/rochelle_teaser2_poster_las_9a24549d.jpeg?region=0%2C0%2C770%2C1100" alt="
+     Paddington: Aventura en la selva (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600806.us.archive.org/5/items/padding-pillow/Padding%20pillow.mp4')"> </li>
     </ul>
 
 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/5fbp3h2m1c1m"  target=_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46698-644406-20240621115458.jpg" alt="
- MaXXXine (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/w4ykafy5wa2q"  target="_blank "><img src="https://megustaelcine.com/wp-content/uploads/2024/10/POSTER-El-aprendiz.jpg" alt="
- The Apprentice. La historia de Trump (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/pez1u2tphamg"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48347-701766-20241210092337.jpg" alt="
-  Kraven el cazador (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"> <img src="https://es.web.img2.acsta.net/c_210_280/img/c3/70/c3703dc747fb19cf232978ea08e8e9f4.jpg" alt="Sonic (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600808.us.archive.org/1/items/sonet-3.5/Sonet3.5-.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48347-701766-20241210092337.jpg" alt="Kraven el cazador (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800609.us.archive.org/14/items/Crackets/Crackets.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48473-746696-20241216112244.jpg" alt="
+     Paddington: Aventura en la selva (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600806.us.archive.org/5/items/padding-pillow/Padding%20pillow.mp4')"> </li>
     </ul>
 
 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/8qod0vucyflc"  target=_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47893-122524-20241010010020.jpg" alt="
-  Superman: La historia de Christopher Reeve (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/kgnx1n6ud14y"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48111-551207-20241128085911.jpg" alt="
-   Moana 2 (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/6i9w2py244bl"  target="_blank "><img src="https://www.ecartelera.com/carteles/18700/18710/001_p.jpg" alt="
-   Jurado Nº 2 (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47807-327301-20241010043952.jpg" alt="Código: Traje Rojo (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800609.us.archive.org/35/items/Superklaus/Superklaus.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48461-436544-20241217084917.jpg" alt="Mufasa el rey leon (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800702.us.archive.org/33/items/Mufarse/Mufarse.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47299-843109-20240830022501.jpg" alt=" EL Conde de montecristo (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia904501.us.archive.org/16/items/konde_202502/Konde.mp4')"> </li>
+    </ul>
+
+
+    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48621-607155-20241218051239.jpg" alt="El robo perfecto: Pantera (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia904502.us.archive.org/32/items/robber-inprogress/RobberInprogress.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46698-644406-20240621115458.jpg" alt="MaXXXine (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800806.us.archive.org/6/items/Maximad/Maximad.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://megustaelcine.com/wp-content/uploads/2024/10/POSTER-El-aprendiz.jpg" alt="
+     The Apprentice. La historia de Trump (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800609.us.archive.org/1/items/beginner_202502/Beginner.mp4')"> </li>
+    </ul>
+
+
+    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47893-122524-20241010010020.jpg" alt=" Superman: La historia de Christopher Reeve (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600808.us.archive.org/29/items/ese-man/Ese-man.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48111-551207-20241128085911.jpg" alt=" Moana 2 (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia903201.us.archive.org/7/items/mamona-2/Mamona2.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://m.media-amazon.com/images/S/pv-target-images/709d19ee83c23c1cff8d6114545decf12e5f66bba1ed844f4222ae31bd468e5d.jpg" alt=" Jurado Nº 2 (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601408.us.archive.org/15/items/neta-melo-juras-num-2/NetaMeloJurasNum2.mp4')"> </li>
     </ul>
 
 
      <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/08wfa6ub9ng3"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47963-399604-20241120081300.jpg" alt="
-   Wicked (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/ad2b42v568jk"  target="_blank "><img src="https://pics.filmaffinity.com/Gladiator_II-808387712-large.jpg" alt="
-   Gladiator 2 (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/hmw4xaxvck1q"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47213-327845-20240822060321.jpg" alt="
-   No hables con extraños (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47963-399604-20241120081300.jpg" alt=" Wicked (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia903200.us.archive.org/29/items/dekci-w-21/DekciW21.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Gladiator_II-808387712-large.jpg" alt=" Gladiator 2 (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601501.us.archive.org/24/items/Peleadordos/Peleadordos.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47213-327845-20240822060321.jpg" alt=" No hables con extraños (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600805.us.archive.org/25/items/elcocono/elcocono.mp4')"> </li>
     </ul>
 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/8sg3l5lmy605"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47607-774281-20241024062218.jpg" alt="
-   Venom el ultimo baile (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/ng2jodyt3gfa"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48015-422893-20241017113401.jpg" alt="
-   Terrifier 3: Payaso Siniestro (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/h0wrlzshkxxd"  target="_blank "><img src="https://www.findelahistoria.com/web/wp-content/uploads/2024/07/Hellboy-The-Crooked-Man-poster.jpg" alt="
-   Hellboy: The Crooked Man (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47607-774281-20241024062218.jpg" alt="
+    Venom el ultimo baile (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600409.us.archive.org/20/items/Bennim/Bennim.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48015-422893-20241017113401.jpg" alt="
+    Terrifier 3: Payaso Siniestro (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800806.us.archive.org/34/items/yaso-3/Yaso3.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://www.findelahistoria.com/web/wp-content/uploads/2024/07/Hellboy-The-Crooked-Man-poster.jpg" alt="
+    Hellboy: The Crooked Man (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601709.us.archive.org/0/items/diablillo-pillo/DiablilloPillo.mp4')"> </li>
     </ul>
 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://gamovideo.com/y2771ewq4nxn"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47427-649819-20240911011247.jpg" alt="
-   Robot Salvaje (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/pf3hyceeus8s"  target="_blank "><img src="https://www.justwatch.com/images/poster/318099780/s718/al-rescate-de-fondo-de-bikini-la-pelicula-de-arenita-mejillas.jpg" alt="
-   Al rescate de Fondo de Bikini (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://gamovideo.com/1z9yyz1wl4e1"  target="_blank "><img src="https://pics.filmaffinity.com/La_sustancia-259383439-large.jpg" alt="
-   La Sustancia (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47427-649819-20240911011247.jpg" alt="
+    Robot Salvaje (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://hetbuild860092.takeplcdn.art/d/e2zpwlcjo7hvw4m63wv5j3kot4gnhzwutlulh3qejplieoll2hxidzhfmp2hgqxwambk65jb/Um9ib3Qgc2FsdmFqZSAoMjAyNCk=.LAT.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://www.justwatch.com/images/poster/318099780/s718/al-rescate-de-fondo-de-bikini-la-pelicula-de-arenita-mejillas.jpg" alt="
+    Al rescate de Fondo de Bikini (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800109.us.archive.org/13/items/bob-toronja/BobToronja.ia.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/La_sustancia-259383439-large.jpg" alt="
+    La Sustancia (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600608.us.archive.org/26/items/simi-active/SimiActive.mp4')"> </li>
     </ul>
 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
@@ -130,7 +135,7 @@ class Menu extends HTMLElement {
 
  <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
     <li class="cursor-pointer"> <img  src="https://detodopeliculas.nu/wp-content/uploads/2024/07/deadpool_and_wolverine-poster-nuevo.jpg" alt="Deadpool and Wolverine (2024)" class="img_video_nav img-thumbnail   w-50" onclick="videoUrl('https://hetbuild860092.takeplcdn.art/d/e2zgx6cno7hvw4m6d2wi76cnzewss57qead2vtkt3sd5c25qnfyxmavpizwofdysvyiwqynz/RGVhZHBvb2wgJiBXb2x2ZXJpbmUgKDIwMjQp.LAT.mp4')"></li>
-       
+  
     <li class="cursor-pointer"> <img  src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2024/5/w1280/oyQXRZD0CHC4sf3lMph3X3cJzSw.jpg" alt="
     La Joven y El Mar (2024) " class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fjul24%2FVer%20La%20Joven%20y%20El%20Mar%20online%20HD%20-%20Cuevana%202.mp4')">
     </li>
