@@ -13,11 +13,19 @@ class Menu extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `<div style="conten-visivility: auto;">
+     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Una_pelaicula_de_Minecraft-276344892-large.jpg" alt="Minecraft (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800807.us.archive.org/5/items/cubos-el-juego-2025/Cubos%20el%20juego%20%282025%29.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/49551-615592-20250314041252.jpg" alt="Rescate implacable (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600708.us.archive.org/28/items/vaca-super-rescue/vaca%20super%20Rescue.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src=https://m.media-amazon.com/images/M/MV5BYmY0M2Y1YzgtM2FkMC00M2ZjLTljNzgtZDM0NzM2ZTIwZDM5XkEyXkFqcGc@._V1_.jpg" alt="
+     Código Negro (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600709.us.archive.org/28/items/codigo-de-barras/Codigo%20de%20barras.mp4')"> </li>
+    </ul>
+
+
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
     <li class="cursor-pointer"> <img src="https://assets.biggerpicture.ai/assets/HO-1600/eventmaster/1136_4.png" alt="El mono (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia903207.us.archive.org/9/items/Kmonito/Kmonito.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://static.cinemarkhoyts.com.ar/Images/Posters/93fd0bfdd3b1999695cef992824fafaa.jpg" alt="La compañera perfecta (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601502.us.archive.org/8/items/perfect-co/PerfectCo.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_jwdXm6FHdNgv88RD39gMGgIDCDG8LRpOA&s" alt="La compañera perfecta (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601300.us.archive.org/30/items/Copernico/Copernico.mp4')"> </li> 
      <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/rochelle_teaser2_poster_las_9a24549d.jpeg?region=0%2C0%2C770%2C1100" alt="
-     Paddington: Aventura en la selva (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600806.us.archive.org/5/items/padding-pillow/Padding%20pillow.mp4')"> </li>
+     Capitan America el nuevo mundo (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601404.us.archive.org/3/items/dobereiner/D%C3%B6bereiner.mp4')"> </li>
     </ul>
 
 
@@ -134,7 +142,7 @@ class Menu extends HTMLElement {
 </ul> 
 
  <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"> <img  src="https://detodopeliculas.nu/wp-content/uploads/2024/07/deadpool_and_wolverine-poster-nuevo.jpg" alt="Deadpool and Wolverine (2024)" class="img_video_nav img-thumbnail   w-50" onclick="videoUrl('https://hetbuild860092.takeplcdn.art/d/e2zgx6cno7hvw4m6d2wi76cnzewss57qead2vtkt3sd5c25qnfyxmavpizwofdysvyiwqynz/RGVhZHBvb2wgJiBXb2x2ZXJpbmUgKDIwMjQp.LAT.mp4')"></li>
+    <li class="cursor-pointer"> <img  src="https://i.pinimg.com/736x/6f/4a/b8/6f4ab823d4a61e08724d647c14daa888.jpg" alt="Deadpool and Wolverine (2024)" class="img_video_nav img-thumbnail   w-50" onclick="videoUrl('https://ia801505.us.archive.org/28/items/picina-y-tacos-al-pastor/picina%20y%20tacos%20al%20pastor.mp4')"></li>
   
     <li class="cursor-pointer"> <img  src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2024/5/w1280/oyQXRZD0CHC4sf3lMph3X3cJzSw.jpg" alt="
     La Joven y El Mar (2024) " class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fjul24%2FVer%20La%20Joven%20y%20El%20Mar%20online%20HD%20-%20Cuevana%202.mp4')">
