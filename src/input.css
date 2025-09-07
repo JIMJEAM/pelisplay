@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans&family=PT+Sans&family=Roboto&display=swap");
 @import "tailwindcss";
 
-
+/* :root {
+    --color-primary: #0f172a;
+    --font-roboto: "Roboto", sans-serif;
+  } */
+   
 @theme {
 --color-primary: #0f172a;
 --font-roboto: "Roboto", sans-serif;
-  };
-
+  } 
 
 .br-2.animado {
   opacity: 0;
@@ -21,4 +24,45 @@
   transform: rotate(-45deg) translate(-6px, 8px);
   transform-origin: 0% 100%;
 }
+
+#video_navigation {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-row: 3 ;
+  gap: 10px;
+  padding: 5px;
+}
+#video_navigation a {
+  display: block;
+  text-align: center;
+}
+#video_navigation img {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-thumbnail:hover {
+transform: scale(1.5);
+}
+.img-thumbnail:hover {
+position: relative;
+z-index: 1;
+}
+.img-thumbnail:hover {
+max-width: 100vw;
+}
+
+
+
+
+
+
+
+
+
 
