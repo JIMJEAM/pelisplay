@@ -12,19 +12,20 @@ function videoUrl(url) {
 class Menu extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `<div style="conten-visivility: auto;">
+    this.innerHTML = `
     
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"><a href="https://hexload.com/tllvx16t3lmk"  target="_blank "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQMlwlxMXb5b8HtRFveEc6EZr9Smw9TFVGw&s" alt="
-Jurassic World: Renace (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://pixeldrain.com/u/4UfaL5ie"  target="_blank "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-uBUVC6frdpV_7j9uPI_fIoQWU2wqRZV5A&s" alt="
- Pitufos (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"><a href="https://hexload.com/174npjwm3b0e"  target="_blank "><img src="https://m.media-amazon.com/images/M/MV5BNmZjODEzNGMtYjdiNi00ZGEyLWE5MGUtYTUxZmMyOThkNTY0XkEyXkFqcGc@._V1_.jpg" alt="
- Los Cuatro Fantásticos: Primeros pasos (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <div style="conten-visivility: auto;">
+    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <li class="cursor-pointer"><a href="https://hexload.com/3nbki8jiqopb"  target="_blank "><img src="https://m.media-amazon.com/images/M/MV5BNjUwNDBjZmUtOGI3OC00YzcwLWJhZWMtMWQ1ZDg5OWVjOWQ4XkEyXkFqcGc@._V1_.jpg" alt="
+Rockstar: DUKI desde el fin del mundo (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/ok3clqd8ri7w"  target="_blank "><img src="https://image.tmdb.org/t/p/w342/m4MRICGqqwf76GgVrVm3qObyaGw.jpg" alt="
+ A través del fuego (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/ff34trfve9sd"  target="_blank "><img src="https://m.media-amazon.com/images/M/MV5BYTY4ODFkZTgtMWI2ZS00ZDRhLTk1MmItNmQ1Y2UyMjdjMWFmXkEyXkFqcGc@._V1_.jpg" alt="
+ Putin (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     </ul>
 
 
-  
+ 
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
     <li class="cursor-pointer"><a href="https://pixeldrain.com/u/crxtuuCX"  target="_blank "><img src="https://imgs.search.brave.com/sxCslCUrDBNKOGB3KzkvnDR1-bf3uxI3hplIm6O9cc4/rs:fit:860:0:0:0/g:ce/aHR0cDovL3d3dy5p/bXBhd2FyZHMuY29t/LzIwMjUvcG9zdGVy/cy9tZWdhbl90d29f/cG9pbnRfb192ZXIy/LmpwZw" alt="
 M3GAN 2.0 (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
@@ -43,7 +44,6 @@ M3GAN 2.0 (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
  Cómo entrenar a tu dragón (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     </ul>
 
-    
     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
     <li class="cursor-pointer"><a href="https://powcloud.one/ww4pyheq03v2"  target="_blank "><img src="https://image.tmdb.org/t/p/original/5GZeoDCS9kIeTKT7oPejIr0r7LG.jpg" alt="
  Destino final: Lazos de sangre (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
@@ -52,10 +52,10 @@ M3GAN 2.0 (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
       <li class="cursor-pointer"><a href="https://powcloud.one/oa9i5cqk1x2l"  target="_blank "><img src="https://pics.filmaffinity.com/Misiaon_imposible_Sentencia_final-672350282-large.jpg" alt="
 Misión imposible: La sentencia final (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     </ul>
-    
 
      <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Una_pelaicula_de_Minecraft-276344892-large.jpg" alt="Minecraft (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800807.us.archive.org/5/items/cubos-el-juego-2025/Cubos%20el%20juego%20%282025%29.mp4')"> </li>
+   <li class="cursor-pointer"><a href="https://powcloud.one/fg6nb2t1bb5g"  target="_blank "><img src="https://pics.filmaffinity.com/Una_pelaicula_de_Minecraft-276344892-large.jpg" alt="
+Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/49551-615592-20250314041252.jpg" alt="Rescate implacable (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600708.us.archive.org/28/items/vaca-super-rescue/vaca%20super%20Rescue.mp4')"> </li> 
      <li class="cursor-pointer"> <img src=https://m.media-amazon.com/images/M/MV5BYmY0M2Y1YzgtM2FkMC00M2ZjLTljNzgtZDM0NzM2ZTIwZDM5XkEyXkFqcGc@._V1_.jpg" alt="
      Código Negro (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600709.us.archive.org/28/items/codigo-de-barras/Codigo%20de%20barras.mp4')"> </li>
