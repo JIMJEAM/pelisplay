@@ -1710,7 +1710,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
      <li class="cursor-pointer"> <img  src="https://mundosuperman.com/wp-content/uploads/2020/05/Snyder-Cut.jpg" alt="La Liga de la Justicia de Zack Snyder" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('http://ia601506.us.archive.org/6/items/meme-5/jus.mp4')"> </li>
      
-     <li class="cursor-pointer"><a href="#reproducir↑">  ► ↑ </a></li>
+     <li class="cursor-pointer"><a href="#video">  ► ↑ </a></li>
 
  
 
@@ -1719,7 +1719,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
      <section class="cuerpo">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <a href="#reproducir↑" class="float-pelis">
+    <a href="#video" class="float-pelis">
         <i class="fas fa-film my-float-pelis"></i>
         
 `;
