@@ -7,6 +7,29 @@ function videoUrl(url) {
   video.play();
 }
 
+// Inject Responsive Styles
+const style = document.createElement('style');
+style.textContent = `
+  .video-grid-responsive {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mobile default */
+    gap: 10px;
+    padding: 0;
+  }
+  @media (min-width: 768px) {
+    .video-grid-responsive {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 992px) {
+    .video-grid-responsive {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+`;
+document.head.appendChild(style);
+
 //web-component
 
 class Menu extends HTMLElement {
@@ -15,140 +38,158 @@ class Menu extends HTMLElement {
     this.innerHTML = `
     
     <div style="conten-visivility: auto;">
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"><a href="https://hexload.com/indmtl38v919"  target="_blank "><img src="https://m.media-amazon.com/images/M/MV5BNzljZTg5NGUtOTQ3YS00MTlkLTkwMmYtYzRiZmI5YTQ0Yzg5XkEyXkFqcGc@._V1_.jpg" alt="
+El valiente (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/m5t2ovrv51h7"  target="_blank "><img src="https://image.tmdb.org/t/p/w342//lUJIBUjEab71fJ8U9gs0NouUJ18.jpg" alt="
+ La muejer del camarote 10 (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/rzmtig2ry2cd"  target="_blank "><img src="https://es.web.img3.acsta.net/c_310_420/img/a8/de/a8debcd65ea85d53243a3aacd3468fa4.jpg" alt="
+ Regalo maldito (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    </ul>
+
+     <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"><a href="https://mdfx9dc8n.net/f/67rwlxgwcve87r"  target="_blank "><img src="https://lumiere-a.akamaihd.net/v1/images/image002_eef65ea3.jpeg?region=0,0,670,957" alt="
+Un virernes loco (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/qm0n0ggp27j6"  target="_blank "><img src="https://www.universalpictures.com.mx/tl_files/content/movies/him/posters/01.jpg" alt="
+ Him el elegido (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/60akuqm8zkk9"  target="_blank "><img src="https://image.tmdb.org/t/p/w342/kn63tQpkGoOqbncnrGhpr1tFHsJ.jpg" alt="
+ Regalo maldito (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    </ul>
+
+    <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://hexload.com/3nbki8jiqopb"  target="_blank "><img src="https://m.media-amazon.com/images/M/MV5BNjUwNDBjZmUtOGI3OC00YzcwLWJhZWMtMWQ1ZDg5OWVjOWQ4XkEyXkFqcGc@._V1_.jpg" alt="
-Rockstar: DUKI desde el fin del mundo (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+Rockstar: DUKI desde el fin del mundo (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://hexload.com/ok3clqd8ri7w"  target="_blank "><img src="https://image.tmdb.org/t/p/w342/m4MRICGqqwf76GgVrVm3qObyaGw.jpg" alt="
- A través del fuego (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ A través del fuego (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://hexload.com/ff34trfve9sd"  target="_blank "><img src="https://m.media-amazon.com/images/M/MV5BYTY4ODFkZTgtMWI2ZS00ZDRhLTk1MmItNmQ1Y2UyMjdjMWFmXkEyXkFqcGc@._V1_.jpg" alt="
- Putin (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ Putin (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     </ul>
 
 
  
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://pixeldrain.com/u/crxtuuCX"  target="_blank "><img src="https://imgs.search.brave.com/sxCslCUrDBNKOGB3KzkvnDR1-bf3uxI3hplIm6O9cc4/rs:fit:860:0:0:0/g:ce/aHR0cDovL3d3dy5p/bXBhd2FyZHMuY29t/LzIwMjUvcG9zdGVy/cy9tZWdhbl90d29f/cG9pbnRfb192ZXIy/LmpwZw" alt="
-M3GAN 2.0 (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+M3GAN 2.0 (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://powcloud.one/lh2jjh6e6085"  target="_blank "><img src="https://imgs.search.brave.com/fKXi2kDwSXVZCfA_dUCEV7mspH5aNPGsvDQ3P0rEfNg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmFuZGFuZ28u/Y29tL0ltYWdlUmVu/ZGVyZXIvODIwLzAv/cmVkZXNpZ24vc3Rh/dGljL2ltZy9kZWZh/dWx0X3Bvc3Rlci5w/bmcvMC9pbWFnZXMv/bWFzdGVycmVwb3Np/dG9yeS9mYW5kYW5n/by8yMzIyMTcvRUxJ/T19QYXlvZmZfUnVu/bmluZ18xc192NDBf/TWVjaDRiX0ZTLmpw/Zw" alt="
- Elio (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ Elio (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://powcloud.one/b0jdcgvwtwr4"  target="_blank "><img src="https://imgs.search.brave.com/A1q420dan4Z7bjSLo106auQM--EARUzQPrKMVwOB87U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92ZXJ0/aWdvZmlsbXMuZXMv/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MTEvQXVuLUVzdG95/LUFxdWktUG9zdGVy/LTcweDEwMGNtLWdv/eWEtc2NhbGVkLmpw/Zw" alt="
- Aún Estoy Aquí (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ Aún Estoy Aquí (2024)" class="img_video_nav img-thumbnail w-100"></a></li>
     </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://powcloud.one/wtizxn0d50zd"  target="_blank "><img src="https://imgs.search.brave.com/Sdau3-_66R-y3bF4jn5465A41kTjW1T2g_pLkDTJCxk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXNp/emVyLmdsYW5hY2lv/bi5jb20vcmVzaXpl/ci92Mi9HV1RDSzNE/MlRSQ1JYT05QUE1N/SUlTMzJIVS5wbmc_/YXV0aD00OWQ4MGMw/ZDhhNjEwODQzZTdj/MzlhMDBjZTk3ZWM2/ODQxZDdmNTMzZTM3/Yzk5ZmM3NTVjZDQ5/MjA5YTRkZDM1Jndp/ZHRoPTIxMCZoZWln/aHQ9MzAwJnNtYXJ0/PXRydWU" alt="
- El amateur: Operación Venganza (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ El amateur: Operación Venganza (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://powcloud.one/1kvyd0t99xdi"  target="_blank "><img src="https://imgs.search.brave.com/k3IWVycpKJLWWF-AdBbWwcPI8IevTmzl45P6jZEIU40/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXViaXMuZXMvbWVk/aWEvbW92aWVzLzgx/NDUvMzQ1NTM3LzI4/LWFub3MtZGVzcHVl/cy1sX2NvdmVyLmpw/Zw" alt="
- 28 años después (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ 28 años después (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://powcloud.one/hazjcxooj7lr"  target="_blank "><img src="https://imgs.search.brave.com/isph-YadexmVGwxSVNfwH2xOz5sU4gxrFK0oPMW9Rls/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlkyRTVZakUy/WVRRdFpHSXhZaTAw/WVRVNExUazNZekl0/WW1NeVpUTTNNMkk1/WlRNM1hrRXlYa0Zx/Y0djQC5qcGc" alt="
- Cómo entrenar a tu dragón (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ Cómo entrenar a tu dragón (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://powcloud.one/ww4pyheq03v2"  target="_blank "><img src="https://image.tmdb.org/t/p/original/5GZeoDCS9kIeTKT7oPejIr0r7LG.jpg" alt="
- Destino final: Lazos de sangre (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ Destino final: Lazos de sangre (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://powcloud.one/xli7m3dg4yh5"  target="_blank "><img src="https://http2.mlstatic.com/D_NQ_NP_952522-MLM82846236583_032025-O-poster-adherible-lilo-stitch-2025-5-40x28cm.webp" alt="
- Lilo y Stitch (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+ Lilo y Stitch (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
       <li class="cursor-pointer"><a href="https://powcloud.one/oa9i5cqk1x2l"  target="_blank "><img src="https://pics.filmaffinity.com/Misiaon_imposible_Sentencia_final-672350282-large.jpg" alt="
-Misión imposible: La sentencia final (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+Misión imposible: La sentencia final (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     </ul>
 
-     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+     <ul id="video_navigation" class="video-grid-responsive">
    <li class="cursor-pointer"><a href="https://powcloud.one/fg6nb2t1bb5g"  target="_blank "><img src="https://pics.filmaffinity.com/Una_pelaicula_de_Minecraft-276344892-large.jpg" alt="
-Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/49551-615592-20250314041252.jpg" alt="Rescate implacable (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600708.us.archive.org/28/items/vaca-super-rescue/vaca%20super%20Rescue.mp4')"> </li> 
+Minecraft (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/49551-615592-20250314041252.jpg" alt="Rescate implacable (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600708.us.archive.org/28/items/vaca-super-rescue/vaca%20super%20Rescue.mp4')"> </li> 
      <li class="cursor-pointer"> <img src=https://m.media-amazon.com/images/M/MV5BYmY0M2Y1YzgtM2FkMC00M2ZjLTljNzgtZDM0NzM2ZTIwZDM5XkEyXkFqcGc@._V1_.jpg" alt="
-     Código Negro (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600709.us.archive.org/28/items/codigo-de-barras/Codigo%20de%20barras.mp4')"> </li>
+     Código Negro (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600709.us.archive.org/28/items/codigo-de-barras/Codigo%20de%20barras.mp4')"> </li>
     </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"> <img src="https://assets.biggerpicture.ai/assets/HO-1600/eventmaster/1136_4.png" alt="El mono (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia903207.us.archive.org/9/items/Kmonito/Kmonito.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_jwdXm6FHdNgv88RD39gMGgIDCDG8LRpOA&s" alt="La compañera perfecta (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601300.us.archive.org/30/items/Copernico/Copernico.mp4')"> </li> 
+    <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"> <img src="https://assets.biggerpicture.ai/assets/HO-1600/eventmaster/1136_4.png" alt="El mono (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia903207.us.archive.org/9/items/Kmonito/Kmonito.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_jwdXm6FHdNgv88RD39gMGgIDCDG8LRpOA&s" alt="La compañera perfecta (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601300.us.archive.org/30/items/Copernico/Copernico.mp4')"> </li> 
      <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/rochelle_teaser2_poster_las_9a24549d.jpeg?region=0%2C0%2C770%2C1100" alt="
-     Capitan America el nuevo mundo (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601404.us.archive.org/3/items/dobereiner/D%C3%B6bereiner.mp4')"> </li>
+     Capitan America el nuevo mundo (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601404.us.archive.org/3/items/dobereiner/D%C3%B6bereiner.mp4')"> </li>
     </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"> <img src="https://es.web.img2.acsta.net/c_210_280/img/c3/70/c3703dc747fb19cf232978ea08e8e9f4.jpg" alt="Sonic (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600808.us.archive.org/1/items/sonet-3.5/Sonet3.5-.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48347-701766-20241210092337.jpg" alt="Kraven el cazador (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800609.us.archive.org/14/items/Crackets/Crackets.mp4')"> </li> 
+    <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"> <img src="https://es.web.img2.acsta.net/c_210_280/img/c3/70/c3703dc747fb19cf232978ea08e8e9f4.jpg" alt="Sonic (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600808.us.archive.org/1/items/sonet-3.5/Sonet3.5-.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48347-701766-20241210092337.jpg" alt="Kraven el cazador (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia800609.us.archive.org/14/items/Crackets/Crackets.mp4')"> </li> 
      <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48473-746696-20241216112244.jpg" alt="
-     Paddington: Aventura en la selva (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600806.us.archive.org/5/items/padding-pillow/Padding%20pillow.mp4')"> </li>
+     Paddington: Aventura en la selva (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600806.us.archive.org/5/items/padding-pillow/Padding%20pillow.mp4')"> </li>
     </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47807-327301-20241010043952.jpg" alt="Código: Traje Rojo (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800609.us.archive.org/35/items/Superklaus/Superklaus.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48461-436544-20241217084917.jpg" alt="Mufasa el rey leon (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800702.us.archive.org/33/items/Mufarse/Mufarse.mp4')"> </li> 
-     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47299-843109-20240830022501.jpg" alt=" EL Conde de montecristo (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia904501.us.archive.org/16/items/konde_202502/Konde.mp4')"> </li>
+    <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47807-327301-20241010043952.jpg" alt="Código: Traje Rojo (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia800609.us.archive.org/35/items/Superklaus/Superklaus.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48461-436544-20241217084917.jpg" alt="Mufasa el rey leon (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia800702.us.archive.org/33/items/Mufarse/Mufarse.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47299-843109-20240830022501.jpg" alt=" EL Conde de montecristo (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia904501.us.archive.org/16/items/konde_202502/Konde.mp4')"> </li>
     </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48621-607155-20241218051239.jpg" alt="El robo perfecto: Pantera (2025)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia904502.us.archive.org/32/items/robber-inprogress/RobberInprogress.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46698-644406-20240621115458.jpg" alt="MaXXXine (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800806.us.archive.org/6/items/Maximad/Maximad.mp4')"> </li> 
+    <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48621-607155-20241218051239.jpg" alt="El robo perfecto: Pantera (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia904502.us.archive.org/32/items/robber-inprogress/RobberInprogress.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46698-644406-20240621115458.jpg" alt="MaXXXine (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia800806.us.archive.org/6/items/Maximad/Maximad.mp4')"> </li> 
      <li class="cursor-pointer"> <img src="https://megustaelcine.com/wp-content/uploads/2024/10/POSTER-El-aprendiz.jpg" alt="
-     The Apprentice. La historia de Trump (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800609.us.archive.org/1/items/beginner_202502/Beginner.mp4')"> </li>
+     The Apprentice. La historia de Trump (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia800609.us.archive.org/1/items/beginner_202502/Beginner.mp4')"> </li>
     </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47893-122524-20241010010020.jpg" alt=" Superman: La historia de Christopher Reeve (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600808.us.archive.org/29/items/ese-man/Ese-man.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48111-551207-20241128085911.jpg" alt=" Moana 2 (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia903201.us.archive.org/7/items/mamona-2/Mamona2.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://m.media-amazon.com/images/S/pv-target-images/709d19ee83c23c1cff8d6114545decf12e5f66bba1ed844f4222ae31bd468e5d.jpg" alt=" Jurado Nº 2 (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601408.us.archive.org/15/items/neta-melo-juras-num-2/NetaMeloJurasNum2.mp4')"> </li>
+    <ul id="video_navigation" class="video-grid-responsive">
+     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47893-122524-20241010010020.jpg" alt=" Superman: La historia de Christopher Reeve (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600808.us.archive.org/29/items/ese-man/Ese-man.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48111-551207-20241128085911.jpg" alt=" Moana 2 (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia903201.us.archive.org/7/items/mamona-2/Mamona2.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://m.media-amazon.com/images/S/pv-target-images/709d19ee83c23c1cff8d6114545decf12e5f66bba1ed844f4222ae31bd468e5d.jpg" alt=" Jurado Nº 2 (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601408.us.archive.org/15/items/neta-melo-juras-num-2/NetaMeloJurasNum2.mp4')"> </li>
     </ul>
 
 
-     <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47963-399604-20241120081300.jpg" alt=" Wicked (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia903200.us.archive.org/29/items/dekci-w-21/DekciW21.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Gladiator_II-808387712-large.jpg" alt=" Gladiator 2 (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601501.us.archive.org/24/items/Peleadordos/Peleadordos.mp4')"> </li>
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47213-327845-20240822060321.jpg" alt=" No hables con extraños (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600805.us.archive.org/25/items/elcocono/elcocono.mp4')"> </li>
+     <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47963-399604-20241120081300.jpg" alt=" Wicked (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia903200.us.archive.org/29/items/dekci-w-21/DekciW21.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Gladiator_II-808387712-large.jpg" alt=" Gladiator 2 (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601501.us.archive.org/24/items/Peleadordos/Peleadordos.mp4')"> </li>
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47213-327845-20240822060321.jpg" alt=" No hables con extraños (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600805.us.archive.org/25/items/elcocono/elcocono.mp4')"> </li>
     </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47607-774281-20241024062218.jpg" alt="
-    Venom el ultimo baile (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600409.us.archive.org/20/items/Bennim/Bennim.mp4')"> </li>
+    Venom el ultimo baile (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600409.us.archive.org/20/items/Bennim/Bennim.mp4')"> </li>
     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/48015-422893-20241017113401.jpg" alt="
-    Terrifier 3: Payaso Siniestro (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800806.us.archive.org/34/items/yaso-3/Yaso3.mp4')"> </li>
+    Terrifier 3: Payaso Siniestro (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia800806.us.archive.org/34/items/yaso-3/Yaso3.mp4')"> </li>
     <li class="cursor-pointer"> <img src="https://www.findelahistoria.com/web/wp-content/uploads/2024/07/Hellboy-The-Crooked-Man-poster.jpg" alt="
-    Hellboy: The Crooked Man (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601709.us.archive.org/0/items/diablillo-pillo/DiablilloPillo.mp4')"> </li>
+    Hellboy: The Crooked Man (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601709.us.archive.org/0/items/diablillo-pillo/DiablilloPillo.mp4')"> </li>
     </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
      <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47427-649819-20240911011247.jpg" alt="
-    Robot Salvaje (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://hetbuild860092.takeplcdn.art/d/e2zpwlcjo7hvw4m63wv5j3kot4gnhzwutlulh3qejplieoll2hxidzhfmp2hgqxwambk65jb/Um9ib3Qgc2FsdmFqZSAoMjAyNCk=.LAT.mp4')"> </li>
+    Robot Salvaje (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://hetbuild860092.takeplcdn.art/d/e2zpwlcjo7hvw4m63wv5j3kot4gnhzwutlulh3qejplieoll2hxidzhfmp2hgqxwambk65jb/Um9ib3Qgc2FsdmFqZSAoMjAyNCk=.LAT.mp4')"> </li>
     <li class="cursor-pointer"> <img src="https://www.justwatch.com/images/poster/318099780/s718/al-rescate-de-fondo-de-bikini-la-pelicula-de-arenita-mejillas.jpg" alt="
-    Al rescate de Fondo de Bikini (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia800109.us.archive.org/13/items/bob-toronja/BobToronja.ia.mp4')"> </li>
+    Al rescate de Fondo de Bikini (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia800109.us.archive.org/13/items/bob-toronja/BobToronja.ia.mp4')"> </li>
     <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/La_sustancia-259383439-large.jpg" alt="
-    La Sustancia (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia600608.us.archive.org/26/items/simi-active/SimiActive.mp4')"> </li>
+    La Sustancia (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia600608.us.archive.org/26/items/simi-active/SimiActive.mp4')"> </li>
     </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://gamovideo.com/gqtg2wddawqy"  target="_blank "><img src="https://cdn.mallmarina.cl/mallconcepcion/uploads/2024/09/Joker-2.jpg" alt="
-   Joker: Folie à Deux (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+   Joker: Folie à Deux (2024)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://gamovideo.com/9lnh1lej8qkd"  target="_blank "><img src="https://moviecrazyplanet.com/wp-content/uploads/2024/07/Transformers-Uno-Chris-Hemsworth-.jpg" alt="
-   Transformers Uno (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+   Transformers Uno (2024)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://gamovideo.com/nkhr5b5o3ez5"  target="_blank "><img src="https://image.tmdb.org/t/p/original/wIDulcEDrbW5tLaAHIUqODaTGG6.jpg" alt="
-   Instintos asesinos (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+   Instintos asesinos (2024)" class="img_video_nav img-thumbnail w-100"></a></li>
     </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://gamovideo.com/86zg4j4qc25y"  target="_blank "><img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47098-323896-20240812011446.jpg" alt="
-   Tipos de Gentileza (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+   Tipos de Gentileza (2024)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://gamovideo.com/uv8ulhzazwg5"  target="_blank "><img src="https://image.tmdb.org/t/p/w500//865DntZzOdX6rLMd405R0nFkLmL.jpg" alt="
-   Borderlands (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+   Borderlands (2024)" class="img_video_nav img-thumbnail w-100"></a></li>
     <li class="cursor-pointer"><a href="https://gamovideo.com/s2d9kxwzm81w"  target="_blank "><img src="https://megustaelcine.com/wp-content/uploads/2024/08/POSTER-El-cuervo-2024-717x1024.jpg" alt="
-   El cuervo (2024)" class="img_video_nav img-thumbnail   w-50 "></a></li>
+   El cuervo (2024)" class="img_video_nav img-thumbnail w-100"></a></li>
     </ul>
 
    
 
  
 
- <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+ <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47141-607088-20240904070840.jpg" alt="Beetlejuice Beetlejuice (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fsep24%2FVer%20Beetlejuice%20Beetlejuice%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/47141-607088-20240904070840.jpg" alt="Beetlejuice Beetlejuice (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fsep24%2FVer%20Beetlejuice%20Beetlejuice%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/sIFz9N45kbGHScotbeK1r1LZXQi.jpg" alt="
@@ -164,9 +205,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>  
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" alt="Alien: Romulus (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fago24%2FVer%20Alien-%20Romulus%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" alt="Alien: Romulus (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fago24%2FVer%20Alien-%20Romulus%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPEON5NKz5tx6ovoCBuCN15uY8Ija_eZQnw&s" alt="
@@ -182,7 +223,7 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul> 
 
- <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+ <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"> <img  src="https://i.pinimg.com/736x/6f/4a/b8/6f4ab823d4a61e08724d647c14daa888.jpg" alt="Deadpool and Wolverine (2024)" class="img_video_nav img-thumbnail   w-50" onclick="videoUrl('https://ia801505.us.archive.org/28/items/picina-y-tacos-al-pastor/picina%20y%20tacos%20al%20pastor.mp4')"></li>
   
     <li class="cursor-pointer"> <img  src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2024/5/w1280/oyQXRZD0CHC4sf3lMph3X3cJzSw.jpg" alt="
@@ -199,9 +240,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEHfhTF0oy6skJekzn-urBiUqvITm35cc_Hf0TZgHDYn3XF8AnShEj7tsymx88fGU5npQ&usqp=CAU" alt="En las profundidades del Sena (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fjun24%2FVer%20En%20las%20profundidades%20del%20Sena%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEHfhTF0oy6skJekzn-urBiUqvITm35cc_Hf0TZgHDYn3XF8AnShEj7tsymx88fGU5npQ&usqp=CAU" alt="En las profundidades del Sena (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fjun24%2FVer%20En%20las%20profundidades%20del%20Sena%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46050-191463-20240411040001.jpg" alt="
@@ -218,9 +259,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg" alt="Atlas (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FVer%20Atlas%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg" alt="Atlas (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FVer%20Atlas%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/k69kkwsipkPn7Nzq488kHGQTPo.jpg" alt="
@@ -236,9 +277,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://storage.googleapis.com/citicinemas-store/Movie-1723/poster/E7hGtIrEAXzs/46045-576386-20240410104502.jpg" alt="El planeta de los simios: nuevo reino (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FVer%20El%20planeta%20de%20los%20simios-%20Nuevo%20reino%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://storage.googleapis.com/citicinemas-store/Movie-1723/poster/E7hGtIrEAXzs/46045-576386-20240410104502.jpg" alt="El planeta de los simios: nuevo reino (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FVer%20El%20planeta%20de%20los%20simios-%20Nuevo%20reino%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-mWDsHg6vmNN6cYUiSo2_MksBvQJpe2tnsA&s" alt="
@@ -254,9 +295,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://media.filmelier.com/tit/9F7PZQ/poster/sin-glasear_Gsg31pQ.jpeg" alt="Sin glasear (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FVer%20Sin%20glasear%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://media.filmelier.com/tit/9F7PZQ/poster/sin-glasear_Gsg31pQ.jpeg" alt="Sin glasear (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FVer%20Sin%20glasear%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/v2YJ94cEfV8ORTPUqdBrwMosJbR.jpg" alt="
@@ -272,9 +313,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46123-684523-20240430031929.jpg" alt="Garfield: La película (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FGarfield%20Fuera%20de%20Casa%20fastplay.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/46123-684523-20240430031929.jpg" alt="Garfield: La película (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmay24%2FGarfield%20Fuera%20de%20Casa%20fastplay.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBs2mFO9J3RgyBZsobQwi2-yTPZXsOknAN4zkfsDVqbdbjeENaFWLqihChov-NChFc-uA&usqp=CAU" alt="
@@ -290,9 +331,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRyAwfEhE0LMmjXQsOVTyLzAF7lANPpKCQUK4dYOUWjn3kpaakaDhvT6ham5FlfW5z_g&usqp=CAU" alt="El Pájaro Loco se va de campamento (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fsep24%2FVer%20Beetlejuice%20Beetlejuice%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRyAwfEhE0LMmjXQsOVTyLzAF7lANPpKCQUK4dYOUWjn3kpaakaDhvT6ham5FlfW5z_g&usqp=CAU" alt="El Pájaro Loco se va de campamento (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fsep24%2FVer%20Beetlejuice%20Beetlejuice%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/cxevDYdeFkiixRShbObdwAHBZry.jpg" alt="
@@ -308,9 +349,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w342/fRaBjht3S1HU6lJrz2SoFwwOZQM.jpg" alt="El Arca de Noé (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Arca%20de%20No%C3%A9%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w342/fRaBjht3S1HU6lJrz2SoFwwOZQM.jpg" alt="El Arca de Noé (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Arca%20de%20No%C3%A9%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/qjx6CMGEqYheoOhwUrDDAyke9z1.jpg" alt="
@@ -326,9 +367,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45298-186406-20240125044141.jpg" alt="Baghead: Contacto con la muerte (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fabr24%2FVer%20Baghead-%20Contacto%20Con%20La%20Muerte%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45298-186406-20240125044141.jpg" alt="Baghead: Contacto con la muerte (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fabr24%2FVer%20Baghead-%20Contacto%20Con%20La%20Muerte%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://moviefilms.com.uy/wp-content/uploads/2023/12/Imaginario.jpg" alt="
@@ -345,9 +386,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 </ul>
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://m.media-amazon.com/images/S/pv-target-images/9eeda69afbfe596d9d652b7f00f3aeb9e612fec80a464b28210ac04b53448b49.jpg" alt="Diario de mi Vagina (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Diario%20de%20mi%20vagina%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://m.media-amazon.com/images/S/pv-target-images/9eeda69afbfe596d9d652b7f00f3aeb9e612fec80a464b28210ac04b53448b49.jpg" alt="Diario de mi Vagina (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Diario%20de%20mi%20vagina%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45515-606465-20240320095056.jpg" alt="
@@ -363,9 +404,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnP6dGaZj99SsixT3FJe6YGjFVpZlBkDzDzXFzAb7hKnPAkX2LQigXHK9_KdOmn_0Fq8&usqp=CAU" alt="Atrapados en lo Profundo (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Atrapados%20en%20lo%20Profundo%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnP6dGaZj99SsixT3FJe6YGjFVpZlBkDzDzXFzAb7hKnPAkX2LQigXHK9_KdOmn_0Fq8&usqp=CAU" alt="Atrapados en lo Profundo (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Atrapados%20en%20lo%20Profundo%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/qfPjPZF2AqB2XnXPFcHlYtlQRS3.jpg" alt="
@@ -381,9 +422,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://www.mubis.es/media/movies/7895/324462/la-primera-profecia-original.jpg" alt="La primera profecía" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fabr24%2FVer%20La%20primera%20profec%C3%ADa%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://www.mubis.es/media/movies/7895/324462/la-primera-profecia-original.jpg" alt="La primera profecía" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fabr24%2FVer%20La%20primera%20profec%C3%ADa%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://es.web.img2.acsta.net/pictures/24/01/10/17/08/1200463.jpg" alt="
@@ -399,9 +440,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/sMp34cNKjIb18UBOCoAv4DpCxwY.jpg" alt="Damsel (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Damsel%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/sMp34cNKjIb18UBOCoAv4DpCxwY.jpg" alt="Damsel (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Damsel%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg" alt="
@@ -417,9 +458,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://mx.web.img2.acsta.net/pictures/24/01/24/20/40/2403201.jpg" alt="Duna - Parte dos (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Duna-%20Parte%20dos%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://mx.web.img2.acsta.net/pictures/24/01/24/20/40/2403201.jpg" alt="Duna - Parte dos (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fmar24%2FVer%20Duna-%20Parte%20dos%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVTijhP5A--1pwgp21Ra9GqI7mYYC0n101WA&s" alt="
@@ -436,9 +477,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://play-lh.googleusercontent.com/b4brmc3O6UtWP7W1jlAPPC35i8tfRZztnn6-GCFjAobAKP7P8vkl0H-RhRtLZUbeuEyTWp7B6NpuJvJNYW8=w240-h480-rw" alt="Ricky Stanicky: El impostor (2024)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Ffeb24%2FVer%20Chicas%20pesadas%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://play-lh.googleusercontent.com/b4brmc3O6UtWP7W1jlAPPC35i8tfRZztnn6-GCFjAobAKP7P8vkl0H-RhRtLZUbeuEyTWp7B6NpuJvJNYW8=w240-h480-rw" alt="Ricky Stanicky: El impostor (2024)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Ffeb24%2FVer%20Chicas%20pesadas%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://images.justwatch.com/poster/312181920/s718/pobres-criaturas.jpg" alt="
@@ -455,9 +496,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://media.filmelier.com/tit/kRiequ/poster/el-bufon_3A3gQuA.jpeg" alt="El bufón (2023) " class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20El%20buf%C3%B3n%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://media.filmelier.com/tit/kRiequ/poster/el-bufon_3A3gQuA.jpeg" alt="El bufón (2023) " class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20El%20buf%C3%B3n%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/9sA8HGHvbm9CqIJZfFmFZxgsOH6.jpg" alt="
@@ -474,9 +515,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://www.mubis.es/media/movies/7837/322026/el-arte-de-matar-original.jpg" alt="El arte de matar (2023) " class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20El%20arte%20de%20matar%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://www.mubis.es/media/movies/7837/322026/el-arte-de-matar-original.jpg" alt="El arte de matar (2023) " class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20El%20arte%20de%20matar%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2G0LGxj8psURJiZfYnzupQ3xdbs42eEotxkaJQ9mUCPTSF9xjVJlfgD7sI1JPmNn-q6I&usqp=CAU" alt="
@@ -493,9 +534,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://22minutoscon.com/wp-content/uploads/2023/10/portada-foto-destacada.jpg" alt="La sociedad de la nieve (2023) " class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://axa4wow3dcia.objectstorage.us-phoenix-1.oci.customer-oci.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/Ver%20La%20sociedad%20de%20la%20nieve%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://22minutoscon.com/wp-content/uploads/2023/10/portada-foto-destacada.jpg" alt="La sociedad de la nieve (2023) " class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://axa4wow3dcia.objectstorage.us-phoenix-1.oci.customer-oci.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/Ver%20La%20sociedad%20de%20la%20nieve%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://www.cinematte.com.es/wp-content/uploads/2022/12/noche-de-paz-154154009-large-656a00d127463.jpeg" alt="
@@ -512,9 +553,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Wonka-476523968-large.jpg" alt="Wonka (2023) " class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20Wonka%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Wonka-476523968-large.jpg" alt="Wonka (2023) " class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20Wonka%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w185/eLqChOdjG1i1LEuXQlmGsAEsClV.jpg" alt="
@@ -531,9 +572,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/original/6EJUEeC9dQglAJhLqluX70hE7Xs.jpg" alt="Mavka: Guardiana del bosque (2023) " class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20Mavka-%20Guardiana%20del%20bosque%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/original/6EJUEeC9dQglAJhLqluX70hE7Xs.jpg" alt="Mavka: Guardiana del bosque (2023) " class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fdiciembre%2FVer%20Mavka-%20Guardiana%20del%20bosque%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://media.filmelier.com/tit/DBhKZS/poster/en-el-desierto_TvySbTo.jpeg" alt="
@@ -550,9 +591,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="/imagenes/Aquaman Y El Reino Perdido.jpg" alt="Aquaman y el reino perdido (2023) " class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://axa4wow3dcia.objectstorage.us-phoenix-1.oci.customer-oci.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/Ver%20Aquaman%20y%20el%20reino%20perdido%20Online%20Castellano%20Latino%20Subtitulada%20HD%20-%20HDFull.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="/imagenes/Aquaman Y El Reino Perdido.jpg" alt="Aquaman y el reino perdido (2023) " class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://axa4wow3dcia.objectstorage.us-phoenix-1.oci.customer-oci.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/Ver%20Aquaman%20y%20el%20reino%20perdido%20Online%20Castellano%20Latino%20Subtitulada%20HD%20-%20HDFull.mp4')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://www.serantes.com/wp-content/uploads/2023/10/SKATROLLS3.jpg" alt="
@@ -569,9 +610,9 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
-    <li class="cursor-pointer"> <img src="https://i.blogs.es/946bf1/balada-de-pajaros-cantores/650_1200.jpg" alt="Los juegos del hambre: balada de pájaros cantores y serpientes (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://dl.dropbox.com/scl/fi/9b5sq647zyj29oyz9i9ir/Ju3g0S-h4mbr3-s0ngs.mp4?rlkey=dghwp74cu106iym294iyqlra9')"> </li> 
+    <li class="cursor-pointer"> <img src="https://i.blogs.es/946bf1/balada-de-pajaros-cantores/650_1200.jpg" alt="Los juegos del hambre: balada de pájaros cantores y serpientes (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://dl.dropbox.com/scl/fi/9b5sq647zyj29oyz9i9ir/Ju3g0S-h4mbr3-s0ngs.mp4?rlkey=dghwp74cu106iym294iyqlra9')"> </li> 
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/43631-480432-20230908013228.jpg" alt="
@@ -588,7 +629,7 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/zwcmjn3qKhP7kUmpgNT0f61xzU3.jpg" alt="
@@ -601,7 +642,7 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 
 
-   <li class="cursor-pointer"> <img src="https://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/35268.jpg" alt="el justiciero capitulo final" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Foctubre%2FVer%20El%20Justiciero-%20Cap%C3%ADtulo%20final%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/35268.jpg" alt="el justiciero capitulo final" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Foctubre%2FVer%20El%20Justiciero-%20Cap%C3%ADtulo%20final%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
 
     </a>
@@ -611,7 +652,7 @@ Minecraft (2025)" class="img_video_nav img-thumbnail   w-50 "></a></li>
 
 </ul>   
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
 <li class="cursor-pointer"> <img  src="https://media.filmelier.com/tit/8tKDaY/poster/plan-de-estudios_uxRsh_Q.jpeg" alt="
@@ -624,7 +665,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-<li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/3MxgXI3VO7QCNnP0mPBjxLIemNM.jpg" alt="El lado dulce de la traición (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://od.lk/s/NV8xODg5NDUwOTFf/HDVER%20El%20lado%20dulce%20de%20la%20traici%C3%B3n%202023.mp4')"> </li> 
+<li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/3MxgXI3VO7QCNnP0mPBjxLIemNM.jpg" alt="El lado dulce de la traición (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://od.lk/s/NV8xODg5NDUwOTFf/HDVER%20El%20lado%20dulce%20de%20la%20traici%C3%B3n%202023.mp4')"> </li> 
 
 
 </a>
@@ -634,7 +675,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 </ul>     
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
     <li class="cursor-pointer"> <img  src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2022/9/w1280/qDukjmqZsgyLN7UKsaGoO69Txcq.jpg" alt="
     La maldición del hombre lobo (2022)" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Foctubre%2FVer%20Hombre%20Lobo%20por%20la%20Noche%20a%20color%20online%20HD%20-%20Cuevana%202.mp4')">
@@ -646,7 +687,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/mClrCMfGpOqTSiuCTSK67WZ92x5.jpg" alt="Monster High 2 (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://od.lk/s/NV8xODg5MjAxODhf/HDVer%20Monster%20High%202%202023.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/mClrCMfGpOqTSiuCTSK67WZ92x5.jpg" alt="Monster High 2 (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://od.lk/s/NV8xODg5MjAxODhf/HDVer%20Monster%20High%202%202023.mp4')"> </li> 
 
 
     </a>
@@ -656,7 +697,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 </ul>     
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/wUvUcLTxc83k4l8psyO2pDYHHB3.jpg" alt="
@@ -668,7 +709,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/9GuvODahvuFqdhuZ16aBLR4UJoP.jpg" alt="¿Quieres ser mi hijo? (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fseptiembre%2FVer%20%C2%BFQuieres%20ser%20mi...%20hijo-%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/9GuvODahvuFqdhuZ16aBLR4UJoP.jpg" alt="¿Quieres ser mi hijo? (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fseptiembre%2FVer%20%C2%BFQuieres%20ser%20mi...%20hijo-%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
 
     </a>
@@ -679,7 +720,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>   
    
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://www.ecartelera.com/carteles/11500/11562/006.jpg" alt="
@@ -691,7 +732,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//vd8YdaH7dzeIMGTNwQinlSiA1gV.jpg" alt="Mini Espias: El armagedón (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fseptiembre%2FVer%20Miniesp%C3%ADas-%20Armaged%C3%B3n%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//vd8YdaH7dzeIMGTNwQinlSiA1gV.jpg" alt="Mini Espias: El armagedón (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fseptiembre%2FVer%20Miniesp%C3%ADas-%20Armaged%C3%B3n%20online%20HD%20-%20Cuevana%202.mp4')"> </li> 
 
 
     </a>
@@ -701,7 +742,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 </ul>   
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42401-631342-20230712030354.png" alt="
@@ -713,7 +754,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://www.ibs.it/images/9788891586049_0_536_0_75.jpg" alt=Ladybug and Cat Noir Awakening (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://tvinnov.online/CINECAN/Ladybug.and.Cat.Noir.Awakening.2023/Ladybug.and.Cat.Noir.Awakening.2023.HDCAM.c1nem4..mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://www.ibs.it/images/9788891586049_0_536_0_75.jpg" alt=Ladybug and Cat Noir Awakening (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://tvinnov.online/CINECAN/Ladybug.and.Cat.Noir.Awakening.2023/Ladybug.and.Cat.Noir.Awakening.2023.HDCAM.c1nem4..mp4')"> </li> 
 
 
     </a>
@@ -723,7 +764,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 </ul>   
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/qmW8mPhcdOP3v36Gz8WEeDdewFN.jpg" alt="
@@ -735,7 +776,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoRrig1CMfY9RfzWxEdEzzl9KhyggVp2gxLO7Rc35owV4qxut56pR3dOCcd5atFw2nmY&usqp=CAU" alt="Resident Evil: Isla de la Muerte (2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230801_20230801_2328/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoRrig1CMfY9RfzWxEdEzzl9KhyggVp2gxLO7Rc35owV4qxut56pR3dOCcd5atFw2nmY&usqp=CAU" alt="Resident Evil: Isla de la Muerte (2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230801_20230801_2328/01.mp4')"> </li> 
 
 
     </a>
@@ -745,7 +786,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 </ul>
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/original/682SlpyatX0HjgjQPOKu0VwpKfl.jpg" alt="
@@ -757,7 +798,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41815-771272-20230404124232.jpg" alt="Los tres mosqueteros: D’Artagnan" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230805_20230805_2028/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41815-771272-20230404124232.jpg" alt="Los tres mosqueteros: D’Artagnan" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230805_20230805_2028/01.mp4')"> </li> 
 
 
     </a>
@@ -768,7 +809,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>   
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500//gvtMN1IWBqqPYYlPy2saWaPbmP9.jpg" alt="
@@ -780,7 +821,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://cloudfront-us-east-1.images.arcpublishing.com/abccolor/4DTKOZQAHFCXNL7ASC5IVS5YCE.webp" alt="Liga de la justicia: mundo de guerra" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fagosto%2FVer%20Tortugas%20Ninja-%20Caos%20mutante%20online%20HD%20-%20Cuevana%202%20Espa%C3%B1ol%20CAM.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://cloudfront-us-east-1.images.arcpublishing.com/abccolor/4DTKOZQAHFCXNL7ASC5IVS5YCE.webp" alt="Liga de la justicia: mundo de guerra" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://grrfff66me7t.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grrfff66me7t/b/Cubojoselyn/o/reset%2Fpeliculas%2Fagosto%2FVer%20Tortugas%20Ninja-%20Caos%20mutante%20online%20HD%20-%20Cuevana%202%20Espa%C3%B1ol%20CAM.mp4')"> </li> 
 
 
     </a>
@@ -790,7 +831,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 </ul>    
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42650-169278-20230602013018.jpg" alt="
@@ -802,7 +843,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//qmevjlNDaWoEughGlXFWHbQ4TaR.jpg" alt="Liga de la justicia: mundo de guerra" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230801_20230801_2043/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//qmevjlNDaWoEughGlXFWHbQ4TaR.jpg" alt="Liga de la justicia: mundo de guerra" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230801_20230801_2043/01.mp4')"> </li> 
 
 
     </a>
@@ -812,7 +853,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 </ul>    
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500//8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="
@@ -824,7 +865,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/uS1AIL7I1Ycgs8PTfqUeN6jYNsQ.jpg" alt="Insidious: La puerta roja" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://main.cinedecalidad.xyz/mexicanas/insidiousroja.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/uS1AIL7I1Ycgs8PTfqUeN6jYNsQ.jpg" alt="Insidious: La puerta roja" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://main.cinedecalidad.xyz/mexicanas/insidiousroja.mp4')"> </li> 
 
 
     </a>
@@ -835,7 +876,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>       
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/5dliMQ2ODbGNoq0hlefdnuXQxMw.jpg" alt="
@@ -847,7 +888,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/2BwerQH4tZvHU6zUlC77aDw7pLt.jpg" alt="El frío en los huesos" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230718_20230718_2134/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/2BwerQH4tZvHU6zUlC77aDw7pLt.jpg" alt="El frío en los huesos" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230718_20230718_2134/01.mp4')"> </li> 
 
 
     </a>
@@ -858,7 +899,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>    
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdjMbKlNLq7dHJ1bHnFL9Fc5uU_uaDn7sSJT_7qZAxYRb-OvlPIX-S87nJe6dJom6a570xQ4aOTRQfMx69ivcgwqR8TGkqwQKJQmckkFkimwpTrlftL1wqawRQJcUB3D8jpt92VV2IGHYx2lhLI7x7jedKOdlzJPGDhI_7cfSv1HYdilAMhoUzzZQzpycf/s791/355095296_6236710693044644_3531237923405411584_n.jpg" alt="
@@ -870,7 +911,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41816-371949-20230505020537.jpg" alt="Elementos" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/elementos_202306/EL-1080_PeliculasySeriesHD.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41816-371949-20230505020537.jpg" alt="Elementos" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/elementos_202306/EL-1080_PeliculasySeriesHD.mp4')"> </li> 
 
 
     </a>
@@ -881,7 +922,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>
 
     
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42099-134368-20230427103539.jpg" alt="
@@ -894,7 +935,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/img/peliculas/42459/1/1/42459.jpg" alt="Spider Man Across The Spider Verse(2023)" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://cdnst14.tokyvideo.com/videos/267/267927/mp4/34f477892eb6ccb82def0268c9303fcc9e85fa3dc52a3fea828877ff4d9b4021.mp4?secure=D2MqoKUPtE_iXLwvYjt2bQ%3D%3D%2C1701839153')"> </li> 
+   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/img/peliculas/42459/1/1/42459.jpg" alt="Spider Man Across The Spider Verse(2023)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://cdnst14.tokyvideo.com/videos/267/267927/mp4/34f477892eb6ccb82def0268c9303fcc9e85fa3dc52a3fea828877ff4d9b4021.mp4?secure=D2MqoKUPtE_iXLwvYjt2bQ%3D%3D%2C1701839153')"> </li> 
 
 
     </a>
@@ -905,7 +946,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>
 
     
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/Flash-205686824-mmed.jpg" alt="
@@ -918,7 +959,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42319-658122-20230428091407.jpg" alt="Demonio negro" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2023pelis%2Fmayooo%2FVer%20Demonio%20negro%20online%20HD%20-%20Cuevana%202%20Espa%C3%B1ol.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42319-658122-20230428091407.jpg" alt="Demonio negro" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2023pelis%2Fmayooo%2FVer%20Demonio%20negro%20online%20HD%20-%20Cuevana%202%20Espa%C3%B1ol.mp4')"> </li> 
 
 
     </a>
@@ -929,7 +970,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>    
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500//9YEGawvjaRgnyW6QVcUhFJPFDco.jpg" alt="
@@ -942,7 +983,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//3IhGkkalwXguTlceGSl8XUJZOVI.jpg" alt="Hynoptic" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2023pelis%2Fmayooo%2FVer%20Hypnotic%20online%20HD%20-%20Cuevana%202%20Espa%C3%B1ol.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//3IhGkkalwXguTlceGSl8XUJZOVI.jpg" alt="Hynoptic" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2023pelis%2Fmayooo%2FVer%20Hypnotic%20online%20HD%20-%20Cuevana%202%20Espa%C3%B1ol.mp4')"> </li> 
 
 
     </a>
@@ -953,7 +994,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>    
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEHK8yn3u06A4VWfSFI3AywzAenBuxPJbmnw&s" alt="
@@ -966,7 +1007,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//gwVAb3hMYl5F68mvKGl2eqDOj0G.jpg" alt="Tin & Tina" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230602_20230602_2101/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//gwVAb3hMYl5F68mvKGl2eqDOj0G.jpg" alt="Tin & Tina" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230602_20230602_2101/01.mp4')"> </li> 
 
 
     </a>
@@ -977,7 +1018,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul>         
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500//ym1dxyOk4jFcSl4Q2zmRrA5BEEN.jpg" alt="
@@ -990,7 +1031,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/y2d2SBqK33mGOG2CqAYMo3YbWE4.jpg" alt="El Club de los Asesinos" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230504_20230504_1804/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/y2d2SBqK33mGOG2CqAYMo3YbWE4.jpg" alt="El Club de los Asesinos" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230504_20230504_1804/01.mp4')"> </li> 
 
 
     </a>
@@ -1001,7 +1042,7 @@ Plan de estudios" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl(
 </ul> 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
 <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500/ogDXuVkO92GcETZfSofXXemw7gb.jpg" alt="
@@ -1014,7 +1055,7 @@ One Piece Film Red " class="img_video_nav  img-thumbnail  w-50"  onclick="videoU
 
 
 
-<li class="cursor-pointer"> <img src="https://cinembrollos.com/wp-content/uploads/2023/09/saw_x_ver5.jpg" alt="Saw X" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://dl.dropbox.com/scl/fi/7w27cklxw9ieg2izoom6z/S4WX.mp4?rlkey=6tt829to3rtb6puuvg380h7n6')"> </li> 
+<li class="cursor-pointer"> <img src="https://cinembrollos.com/wp-content/uploads/2023/09/saw_x_ver5.jpg" alt="Saw X" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://dl.dropbox.com/scl/fi/7w27cklxw9ieg2izoom6z/S4WX.mp4?rlkey=6tt829to3rtb6puuvg380h7n6')"> </li> 
 
 
 </a>
@@ -1025,7 +1066,7 @@ One Piece Film Red " class="img_video_nav  img-thumbnail  w-50"  onclick="videoU
 </ul> 
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/78W8tIM3PgIO6OIMfugi6p1GHNT.jpg" alt="
@@ -1038,7 +1079,7 @@ One Piece Film Red " class="img_video_nav  img-thumbnail  w-50"  onclick="videoU
 
 
 
-   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41753-892183-20230217030119.jpg" alt="Sombras de un crimen" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230513/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41753-892183-20230217030119.jpg" alt="Sombras de un crimen" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230513/01.mp4')"> </li> 
 
 
     </a>
@@ -1049,7 +1090,7 @@ One Piece Film Red " class="img_video_nav  img-thumbnail  w-50"  onclick="videoU
 </ul> 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
 <li class="cursor-pointer"> <img  src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/5/w1280/1OJDfBoMXYrkSkLQOqtWD3bHnKX.jpg" alt="
@@ -1062,7 +1103,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Renfield-758566468-large.jpg" alt="Renfield" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230504_20230504_1831/01.mp4')"> </li> 
+<li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Renfield-758566468-large.jpg" alt="Renfield" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230504_20230504_1831/01.mp4')"> </li> 
 
 
 </a>
@@ -1073,7 +1114,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 </ul> 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500//9NXAlFEE7WDssbXSMgdacsUD58Y.jpg" alt="
@@ -1086,7 +1127,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41760-508243-20230221105251.png" alt="Las Momias y El Anillo Perdido" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_(2023)0409_(2023)0409_2336/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41760-508243-20230221105251.png" alt="Las Momias y El Anillo Perdido" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_(2023)0409_(2023)0409_2336/01.mp4')"> </li> 
 
 
     </a>
@@ -1098,7 +1139,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/41749-830563-20230329061508.jpg" alt="
@@ -1111,7 +1152,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFk8U65qN7m2RyjjzzF-IexAU0tLoP4k3XqrjXiTbkFfyA-HfV0dy-Abd7fl3K9XjX_L4&usqp=CAU" alt="Winnie the Pooh: Miel y Sangre" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_(2023)0409_(2023)0409_2336/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFk8U65qN7m2RyjjzzF-IexAU0tLoP4k3XqrjXiTbkFfyA-HfV0dy-Abd7fl3K9XjX_L4&usqp=CAU" alt="Winnie the Pooh: Miel y Sangre" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_(2023)0409_(2023)0409_2336/01.mp4')"> </li> 
 
 
     </a>
@@ -1123,7 +1164,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://lumiere-a.akamaihd.net/v1/images/ant-man_and_the_wasp_quantumania_poster_2_la_6eea32a6.jpeg?region=0,0,743,1100" alt="
@@ -1136,7 +1177,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://editorial.aristeguinoticias.com/wp-content/uploads/2022/12/winnie-the-pooh-miel-y-sangre-poster-espanol-scaled.jpg" alt="Winnie the Pooh: Miel y Sangre" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230130_20230130_2128/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://editorial.aristeguinoticias.com/wp-content/uploads/2022/12/winnie-the-pooh-miel-y-sangre-poster-espanol-scaled.jpg" alt="Winnie the Pooh: Miel y Sangre" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230130_20230130_2128/01.mp4')"> </li> 
 
 
     </a>
@@ -1147,7 +1188,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 </ul> 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://i.postimg.cc/rwKPZ2NF/evildead.jpg" alt="
@@ -1160,7 +1201,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/tq8x5F17q95T1j0up5rpzXFAylN.jpg" alt="Embaucadores" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://image.tmdb.org/t/p/w500/tq8x5F17q95T1j0up5rpzXFAylN.jpg')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500/tq8x5F17q95T1j0up5rpzXFAylN.jpg" alt="Embaucadores" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://image.tmdb.org/t/p/w500/tq8x5F17q95T1j0up5rpzXFAylN.jpg')"> </li> 
 
 
     </a>
@@ -1172,7 +1213,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://posterspy.com/wp-content/uploads/2022/12/Cocaine_Bear_Poster.jpg" alt="
@@ -1185,7 +1226,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//oGHr8yUOXtVK0mGoZURZqqbwXXj.jpg" alt="Identidad desbloqueada" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230227_20230227_1914/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//oGHr8yUOXtVK0mGoZURZqqbwXXj.jpg" alt="Identidad desbloqueada" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230227_20230227_1914/01.mp4')"> </li> 
 
 
     </a>
@@ -1195,7 +1236,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 </ul> 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://www.nextgame.es/wp-content/uploads/2022/10/Una-Boda-Explosiva-trailer.png" alt="Una boda Explosiva" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia804706.us.archive.org/13/items/b0d_45-pl0M0/b0d_45-pl0M0.mp4')"> </li>
@@ -1207,7 +1248,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://i.ebayimg.com/images/g/mIgAAOSwUX5kZIV3/s-l400.jpg" alt="M3gan" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/m-333gan-dual-latino-ingles/M333gan DUAL(Latino-Inglés).mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://i.ebayimg.com/images/g/mIgAAOSwUX5kZIV3/s-l400.jpg" alt="M3gan" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/m-333gan-dual-latino-ingles/M333gan DUAL(Latino-Inglés).mp4')"> </li> 
 
 
     </a>
@@ -1217,7 +1258,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 </ul> 
     
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/img/peliculas/41145/1/1/41145.jpg" alt="Vecino gruñon" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia804707.us.archive.org/21/items/1-v-3c-1n-0-gru-n-0n/1_v3c1n0-gruN%CC%830n.mp4')"> </li>
@@ -1230,7 +1271,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
    <li class="cursor-pointer"> <img src="https://es.web.img2.acsta.net/pictures/22/03/21/17/30/4116877.jpg" alt="
-   Fresh" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia904706.us.archive.org/0/items/fr35h.lat/fr35h.lat.mp4')"> </li> 
+   Fresh" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia904706.us.archive.org/0/items/fr35h.lat/fr35h.lat.mp4')"> </li> 
 
 
     </a>
@@ -1242,7 +1283,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500//gU4mmINWUF294Wzi8mqRvi6peMe.jpg" alt="Narvik" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://archive.org/download/01_20230130_20230130_2041/01.mp4')"> </li>
@@ -1254,7 +1295,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//abBDzmy35A3Nkupn6wK2DKyFamd.jpg" alt="Viking Wolf" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230207_20230207_2245/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//abBDzmy35A3Nkupn6wK2DKyFamd.jpg" alt="Viking Wolf" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230207_20230207_2245/01.mp4')"> </li> 
 
 
     </a>
@@ -1266,7 +1307,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2022/11/w1280/p6HNFpXiXIdyMRJTrfkgaPkFCK.jpg" alt="La bala perdida 2" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2022pelicu%2Fnoviembr%2FVer%20Bala%20perdida%202%20(2022)%20Online%20%E2%80%93%20CineHDPlus.mp4')"> </li>
@@ -1278,7 +1319,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/img/peliculas/40276/1/1/40276.jpg" alt="La mujer rey" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2022pelicu%2Fnoviembr%2FVer%20La%20Mujer%20Rey%20Online%20Castellano%20Latino%20Subtitulada%20HD%20-%20HDFull.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://static.cinepolis.com/img/peliculas/40276/1/1/40276.jpg" alt="La mujer rey" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2022pelicu%2Fnoviembr%2FVer%20La%20Mujer%20Rey%20Online%20Castellano%20Latino%20Subtitulada%20HD%20-%20HDFull.mp4')"> </li> 
 
 
     </a>
@@ -1291,19 +1332,19 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://image.tmdb.org/t/p/w500//wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg"Babylon" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://archive.org/download/01_20230203_20230203/01.mp4')"> </li>
 
 
-    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//wAkpPm3wcHRqZl8XjUI3Y2chYq2.jpg" alt="Teen Wolf" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230130_20230130_2101/01.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/w500//wAkpPm3wcHRqZl8XjUI3Y2chYq2.jpg" alt="Teen Wolf" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230130_20230130_2101/01.mp4')"> </li> 
    
 
 
 
 
-   <li class="cursor-pointer"> <img src="https://es.web.img2.acsta.net/pictures/23/01/30/15/11/2244443.jpg" alt="A todas partes" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://archive.org/download/01_20230217_20230217_1536/01.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://es.web.img2.acsta.net/pictures/23/01/30/15/11/2244443.jpg" alt="A todas partes" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://archive.org/download/01_20230217_20230217_1536/01.mp4')"> </li> 
 
 
     </a>
@@ -1315,19 +1356,19 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
 <li class="cursor-pointer"> <img  src="https://i.ebayimg.com/images/g/9hMAAOSwYBFjGYkt/s-l1200.webp" alt="Black Adam" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('http://199.188.103.26/rombwgshgfhgdsjr/85455532potroxvix/Pel%C3%ADculas/Black%20Adam%202022latHD.mp4')"> </li>
 
 
-<li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjhoia5od42mgyuWDf8IkBx2G8jFFbYYgQY8A8HihakBbCRPWm4A9s-8V_iQRzxc83Wc&usqp=CAU" alt="Mírame" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia804700.us.archive.org/13/items/m_1r4-m3/m_1r4-m3.mp4')"> </li> 
+<li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjhoia5od42mgyuWDf8IkBx2G8jFFbYYgQY8A8HihakBbCRPWm4A9s-8V_iQRzxc83Wc&usqp=CAU" alt="Mírame" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia804700.us.archive.org/13/items/m_1r4-m3/m_1r4-m3.mp4')"> </li> 
 
 
 
 
 
-<li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Till_Death_Hasta_que_la_muerte_nos_separe-895474287-large.jpg" alt="Hasta la muerte" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('http://proteiosmorelia.site/stuff/till.mp4')"> </li> 
+<li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Till_Death_Hasta_que_la_muerte_nos_separe-895474287-large.jpg" alt="Hasta la muerte" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('http://proteiosmorelia.site/stuff/till.mp4')"> </li> 
 
 
 </a>
@@ -1339,7 +1380,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
         
     <li class="cursor-pointer"> <img  src="https://es.web.img3.acsta.net/pictures/21/07/22/15/42/2192431.jpg" alt="El tubo" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/tubo.mp4')"> </li>
@@ -1350,7 +1391,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Halloween_El_final-885815456-large.jpg" alt="Hallowen el final" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/halloween.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Halloween_El_final-885815456-large.jpg" alt="Hallowen el final" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/halloween.mp4')"> </li> 
 
 
 
@@ -1360,7 +1401,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
    
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
     <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/deo_mun-579180002-mmed.jpg" alt="moon" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/cerveza.mp4')"> </li>
@@ -1371,7 +1412,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/39643-378416-20220708041757.jpg" alt="Mi dulce monstruo" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://casiano.store/stuff/dulce.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/39643-378416-20220708041757.jpg" alt="Mi dulce monstruo" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://casiano.store/stuff/dulce.mp4')"> </li> 
 
     <li class="cursor-pointer"><a href="#reproducir↑">  ► ↑ </a></li>
   
@@ -1383,7 +1424,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/Los_perdonados-711017451-large.jpg" alt="Los perdonados" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://casiano.store/stuff/forgiven.mp4')"> </li>
@@ -1393,7 +1434,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
    
 
 
-   <li class="cursor-pointer"> <img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2022/10/w1280/vYhPCfSDlLObeV5bUIkmeUyR4gl.jpg" alt="El extraño" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/extrano.mp4')"> </li> 
+   <li class="cursor-pointer"> <img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2022/10/w1280/vYhPCfSDlLObeV5bUIkmeUyR4gl.jpg" alt="El extraño" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/extrano.mp4')"> </li> 
 
 
 
@@ -1402,7 +1443,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/39908-115310-20220812023302.jpg" alt="Érase Una Vez Un Genio" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://www.alianzajuridicainteramericana.com/movies/esperando.mp4')"> </li>
@@ -1413,7 +1454,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <li class="cursor-pointer"> <img src="https://pecime.com.mx/wp-content/uploads/2022/09/3.-Emergencia-en-el-aire-714x1024.jpg" alt="Emergencia en el aire" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://casiano.store/stuff/emergenciabien.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://pecime.com.mx/wp-content/uploads/2022/09/3.-Emergencia-en-el-aire-714x1024.jpg" alt="Emergencia en el aire" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://casiano.store/stuff/emergenciabien.mp4')"> </li> 
 
 
 
@@ -1423,7 +1464,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+    <ul id="video_navigation" class="video-grid-responsive">
 
         
     <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/Pinocho-256590713-large.jpg" alt="Pinocho" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('http://proteiosmorelia.site/stuff/pinocho.mp4')"> </li>
@@ -1435,7 +1476,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/39753-784619-20220722063400.jpg" alt="
-    Vértigo" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://polimor.club/movies/vertigo.mp4')"> </li> 
+    Vértigo" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://polimor.club/movies/vertigo.mp4')"> </li> 
 
     
   
@@ -1447,7 +1488,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
     <li class="cursor-pointer"> <img  src="https://es.web.img3.acsta.net/pictures/22/05/25/17/54/5230446.jpg" alt="Pig" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/pig.mp4')"> </li>
@@ -1458,7 +1499,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Medieval-943570499-large.jpg" alt="Medieval" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/medieval.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/Medieval-943570499-large.jpg" alt="Medieval" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/medieval.mp4')"> </li> 
 
     
   
@@ -1470,7 +1511,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://images.justwatch.com/poster/300974125/s718/causeway.%7Bformat%7D" alt="Causeway" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/resurgir.mp4')"> </li>
@@ -1481,7 +1522,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/39883-743882-20220812022834.jpg" alt="Pasaje al paraíso" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/viaje.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/39883-743882-20220812022834.jpg" alt="Pasaje al paraíso" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://www.colegiofederaldeperitos.org/stuff/viaje.mp4')"> </li> 
 
     <li class="cursor-pointer"><a href="#reproducir↑">  ► ↑ </a></li>
 
@@ -1492,7 +1533,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
     <li class="cursor-pointer"> <img  src="https://mx.web.img3.acsta.net/pictures/23/02/01/19/25/0306121.jpg" alt="Malcriados" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia801603.us.archive.org/33/items/m-4l-c-r-14-2/M4l-c_r14-2.mp4')"> </li>
@@ -1503,7 +1544,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <li class="cursor-pointer"> <img src="https://culturizarte.cl/wp-content/uploads/2021/10/chernobil.jpg" alt="Chernóbil: La Película" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia802601.us.archive.org/3/items/ch-3rn-0/Ch3rn_0.mp4')"> </li> 
+    <li class="cursor-pointer"> <img src="https://culturizarte.cl/wp-content/uploads/2021/10/chernobil.jpg" alt="Chernóbil: La Película" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia802601.us.archive.org/3/items/ch-3rn-0/Ch3rn_0.mp4')"> </li> 
 
   
 
@@ -1514,7 +1555,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
        
     <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/Huesera-823576509-large.jpg" alt="Huesera" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia904706.us.archive.org/0/items/hu-3-53.r-4/Hu3_53.r4.mp4')"> </li>
@@ -1525,7 +1566,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-    <li class="cursor-pointer"> <img src="https://www.ennetflix.mx/media/15/amor-al-cuadrado_81259382.jpg" alt="Amor al cuadrado" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://tgdownloads.dltelegram.workers.dev/1001886225227/2393')"> </li> 
+    <li class="cursor-pointer"> <img src="https://www.ennetflix.mx/media/15/amor-al-cuadrado_81259382.jpg" alt="Amor al cuadrado" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://tgdownloads.dltelegram.workers.dev/1001886225227/2393')"> </li> 
 
     <li class="cursor-pointer"><a href="#reproducir↑">  ► ↑ </a></li>
         
@@ -1538,7 +1579,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
  
- <ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+ <ul id="video_navigation" class="video-grid-responsive">
 
         
      <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/bullet_train-757922812-large.jpg" alt="Tren bala" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia801402.us.archive.org/4/items/tr_3n/b_ull3t.mp4')"> </li>
@@ -1549,7 +1590,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-     <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/depredador_la_presa_poster_2_496bbe49.jpeg?region=0,0,770,1100" alt="Depredador la presa" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601502.us.archive.org/31/items/p.R3_y/p.R3_y0k.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/depredador_la_presa_poster_2_496bbe49.jpeg?region=0,0,770,1100" alt="Depredador la presa" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601502.us.archive.org/31/items/p.R3_y/p.R3_y0k.mp4')"> </li> 
  
    
 
@@ -1560,7 +1601,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
      <li class="cursor-pointer"> <img  src="https://musicimage.xboxlive.com/catalog/video.movie.8D6KGWXND26B/image?locale=es-es&mode=crop&purposes=BoxArt&q=90&h=300&w=200&format=jpg" alt="Tormenta infinita" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia801507.us.archive.org/7/items/1nf-1n-1t-3.5t-0rm/1nf1n1t3.5t0rm.mp4')"> </li>
@@ -1571,7 +1612,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-     <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/p_243_ster_lightyear_9209f1b3.jpeg" alt="El Valet" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601505.us.archive.org/28/items/l-1-y-3.4-r/L1_y3.4R.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/p_243_ster_lightyear_9209f1b3.jpeg" alt="El Valet" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601505.us.archive.org/28/items/l-1-y-3.4-r/L1_y3.4R.mp4')"> </li> 
  
      <li class="cursor-pointer"><a href="#reproducir↑">  ► ↑ </a></li>
 
@@ -1582,7 +1623,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
      <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/iron_cross_the_road_to_normandy-587205455-large.jpg" alt="Cruz de Hierro: El camino a Normandía" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia801500.us.archive.org/2/items/1r-0n-cr-055/1r0n_Cr%20055.mp4')"> </li>
@@ -1593,7 +1634,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-     <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/chip_n_dale_rescue_rangers-335785940-large.jpg" alt="moon" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601508.us.archive.org/20/items/ch-1-p-n/Ch_1P%20%27n%20.mp4')"> </li> 
+     <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/chip_n_dale_rescue_rangers-335785940-large.jpg" alt="moon" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601508.us.archive.org/20/items/ch-1-p-n/Ch_1P%20%27n%20.mp4')"> </li> 
 
  
  
@@ -1602,7 +1643,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
      <li class="cursor-pointer"> <img  src="https://m.media-amazon.com/images/I/513XjcK7OmL._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="Red" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://archive.org/download/r-3dd-2022/R3dd2022.mp4')"> </li>
@@ -1613,7 +1654,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-     <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/resident_evil_welcome_to_raccoon_city-764554100-large.jpg" alt="Resident Evil: Bienvenidos a Raccoon City" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601405.us.archive.org/23/items/rp-189-pr/RP189PR.mp4')"> </li>
+     <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/resident_evil_welcome_to_raccoon_city-764554100-large.jpg" alt="Resident Evil: Bienvenidos a Raccoon City" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601405.us.archive.org/23/items/rp-189-pr/RP189PR.mp4')"> </li>
      
      <li class="cursor-pointer"><a href="#reproducir↑">  ► ↑ </a></li>
 
@@ -1624,7 +1665,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
      <li class="cursor-pointer"> <img  src="https://m.media-amazon.com/images/I/71iwxS0LgUS.jpg" alt="Hotel Transylvania: transformanía" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia601502.us.archive.org/17/items/0t-31tr-4n-51lv-4n-142022/0t31tr4n51lv4n142022.mp4')"> </li>
@@ -1637,7 +1678,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
      <li class="cursor-pointer"> <img src="https://pics.filmaffinity.com/ghostbusters_afterlife-667822266-large.jpg" alt="Ghostbusters: el legado
      A 2021 ‧ Comedia/Fantasía ‧ 2h 4m
-     " class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia601504.us.archive.org/31/items/c4s42021/c4s42021.mp4')"> </li> 
+     " class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601504.us.archive.org/31/items/c4s42021/c4s42021.mp4')"> </li> 
 
  
  
@@ -1646,7 +1687,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-<ul id="video_navigation" style="list-style-type: none; display: grid; grid-template-columns: repeat(3 , 1fr);">
+<ul id="video_navigation" class="video-grid-responsive">
 
         
      <li class="cursor-pointer"> <img  src="https://pics.filmaffinity.com/marry_me-852565093-large.jpg" alt="Merry me" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia802508.us.archive.org/26/items/c-454-t-3-c-0nm-1-g-0/C454%20t3%20c0nm1%20g0.ia.mp4')"> </li>
@@ -1657,7 +1698,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/img/peliculas/39361/1/1/39361.jpg" alt="Thor: Amor y trueno" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('https://ia801500.us.archive.org/3/items/t-h-0-r/T_h0-r.mp4')"> </li>
+     <li class="cursor-pointer"> <img src="https://static.cinepolis.com/img/peliculas/39361/1/1/39361.jpg" alt="Thor: Amor y trueno" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia801500.us.archive.org/3/items/t-h-0-r/T_h0-r.mp4')"> </li>
 
      <li class="cursor-pointer"> <img  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/086a3ff3-cfc9-4353-b023-f99822788b9a/df3v63t-c19e83aa-1008-4bed-a072-90b87e74aede.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4NmEzZmYzLWNmYzktNDM1My1iMDIzLWY5OTgyMjc4OGI5YVwvZGYzdjYzdC1jMTllODNhYS0xMDA4LTRiZWQtYTA3Mi05MGI4N2U3NGFlZGUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.omw8Igy8csWoQHmfKpeWegP7FGMvOOVEDdNqNORCEJw" alt="Morbius" class="img_video_nav  img-thumbnail  w-50"  onclick="videoUrl('https://ia902507.us.archive.org/14/items/m-0r-b-1-u-5./M0r_b1%20u5..mp4')"> </li>
 
@@ -1667,7 +1708,7 @@ Royalteen: La princesa Margrethe" class="img_video_nav  img-thumbnail  w-50"  on
 
 
 
-     <li class="cursor-pointer"> <img  src="https://mundosuperman.com/wp-content/uploads/2020/05/Snyder-Cut.jpg" alt="La Liga de la Justicia de Zack Snyder" class="img_video_nav img-thumbnail w-50" onclick="videoUrl('http://ia601506.us.archive.org/6/items/meme-5/jus.mp4')"> </li>
+     <li class="cursor-pointer"> <img  src="https://mundosuperman.com/wp-content/uploads/2020/05/Snyder-Cut.jpg" alt="La Liga de la Justicia de Zack Snyder" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('http://ia601506.us.archive.org/6/items/meme-5/jus.mp4')"> </li>
      
      <li class="cursor-pointer"><a href="#reproducir↑">  ► ↑ </a></li>
 
