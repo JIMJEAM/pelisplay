@@ -36,8 +36,17 @@ class Menu extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-    
     <div style="conten-visivility: auto;">
+
+     <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"><a href="https://hexload.com/hlwyd0hpk23k"  target="_blank "><img src="https://image.tmdb.org/t/p/w500/am6O7221qGtb5ba5uJKw7PfPZkJ.jpg" alt="
+Five Nights at Freddy’s 2 (2025) class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/p4e6ldzrfrxx"  target="_blank "><img src="https://image.tmdb.org/t/p/w600_and_h900_face/aR4JhzROYwxYp1D6EvyGFrSLo80.jpg" alt="
+ El secreto de Santa (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/psa636tzevac"  target="_blank "><img src="https://image.tmdb.org/t/p/w500/hHvNNxbg5kU0jhsTrsef2oR80yR.jpg" alt="
+ Un buen ladrón (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    </ul>
+
     <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://hexload.com/indmtl38v919"  target="_blank "><img src="https://m.media-amazon.com/images/M/MV5BNzljZTg5NGUtOTQ3YS00MTlkLTkwMmYtYzRiZmI5YTQ0Yzg5XkEyXkFqcGc@._V1_.jpg" alt="
 El valiente (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
