@@ -115,7 +115,7 @@ Minecraft (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
     <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"> <img src="https://assets.biggerpicture.ai/assets/HO-1600/eventmaster/1136_4.png" alt="El mono (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia903207.us.archive.org/9/items/Kmonito/Kmonito.mp4')"> </li>
     <li class="cursor-pointer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_jwdXm6FHdNgv88RD39gMGgIDCDG8LRpOA&s" alt="La compañera perfecta (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601300.us.archive.org/30/items/Copernico/Copernico.mp4')"> </li> 
-     <li class="cursor-pointer"> <img src="https://image.tmdb.org/t/p/original/xVwP4GCbEfO66JSSyonnAhU3Fad.jpg" alt="
+     <li class="cursor-pointer"> <img src="https://lumiere-a.akamaihd.net/v1/images/rochelle_teaser2_poster_las_9a24549d.jpeg?region=0%2C0%2C770%2C1100" alt="
      Capitan America el nuevo mundo (2025)" class="img_video_nav img-thumbnail w-100" onclick="videoUrl('https://ia601404.us.archive.org/3/items/dobereiner/D%C3%B6bereiner.mp4')"> </li>
     </ul>
 
