@@ -37,6 +37,14 @@ class Menu extends HTMLElement {
     super();
     this.innerHTML = `
     <div style="conten-visivility: auto;">
+    <ul id="video_navigation" class="video-grid-responsive">
+    <li class="cursor-pointer"><a href="https://hexload.com/pbv78rlcsagr"  target="_blank "><img src="https://lumiere-a.akamaihd.net/v1/images/41_coral3_payoff_1sht_spain_spanish_71c1681f.jpeg" alt="
+Avatar fuego y ceniza (2025) class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/m2wctdqrdnn4"  target="_blank "><img src="https://media.themoviedb.org/t/p/w220_and_h330_face/u2xyvEmgkXmfMeCQcGf6mERNFfd.jpg" alt="
+ Mátate, amor (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    <li class="cursor-pointer"><a href="https://hexload.com/uz8pevkt6v61"  target="_blank "><img src="https://portadas.latinomegahd.net/files/cover_sin-sin_1766132165_50587c.webp" alt="
+ Un buen ladrón (2025)" class="img_video_nav img-thumbnail w-100"></a></li>
+    </ul>
 
      <ul id="video_navigation" class="video-grid-responsive">
     <li class="cursor-pointer"><a href="https://hexload.com/hlwyd0hpk23k"  target="_blank "><img src="https://image.tmdb.org/t/p/w500/am6O7221qGtb5ba5uJKw7PfPZkJ.jpg" alt="
